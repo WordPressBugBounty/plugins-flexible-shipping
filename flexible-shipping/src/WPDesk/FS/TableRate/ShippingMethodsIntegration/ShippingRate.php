@@ -31,6 +31,8 @@ class ShippingRate implements Hookable {
 	 */
 	protected static $fs_logger;
 
+	private array $package;
+
 	/**
 	 * Set logger. This logger is set by Flexible Shipping plugin.
 	 *

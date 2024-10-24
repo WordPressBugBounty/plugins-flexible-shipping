@@ -4,7 +4,7 @@ Donate link: https://octol.io/fs-repo-up
 Tags: woocommerce shipping, table rate shipping, woocommerce table rate shipping, advanced shipping, flexible shipping woocommerce
 Requires at least: 5.8
 Tested up to: 6.6
-Stable tag: 5.0.0
+Stable tag: 5.0.1
 Requires PHP: 7.4
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -73,6 +73,10 @@ These are only a few examples of the Flexible Shipping usage, however, sky is th
 * Free shipping coupons support
 
 [Upgrade to PRO Now &rarr;](https://octol.io/fs-repo-up)
+
+= Table rate available for all shipping methods =
+
+We’ve added integration with any shipping method in WooCommerce. The new feature allows the use of shipping cost calculation rules for all shipping methods available in WooCommerce, including Flat Rate and those added by other plugins. This provides greater control over delivery costs and allows you to take advantage of the existing features of other methods. We encourage you to give it a try with one of our live rates plugins listed below in Useful free WooCommerce shipping plugins from Octolize section.
 
 = Flexible Shipping Box Packing WooCommerce =
 
@@ -233,6 +237,10 @@ We provide a limited support for the free version of our Flexible Shipping plugi
 If you are upgrading from the old Flexible Shipping version (1.3.2, woo-flexible-shipping) make sure to completely delete the old version first. If you install the new version without deleting the old one it may break your WordPress installation.
 
 == Changelog ==
+
+= 5.0.1 - 2024-10-24 =
+* Fixed PHP notices in shipping method settings
+* Fixed PHP notices on PHP 8
 
 = 5.0.0 - 2024-10-22 =
 * Added ability to use Rules Table in other shipping methods
