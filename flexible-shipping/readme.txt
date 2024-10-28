@@ -4,7 +4,7 @@ Donate link: https://octol.io/fs-repo-up
 Tags: woocommerce shipping, table rate shipping, woocommerce table rate shipping, advanced shipping, flexible shipping woocommerce
 Requires at least: 5.8
 Tested up to: 6.6
-Stable tag: 5.0.1
+Stable tag: 5.0.2
 Requires PHP: 7.4
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -237,6 +237,10 @@ We provide a limited support for the free version of our Flexible Shipping plugi
 If you are upgrading from the old Flexible Shipping version (1.3.2, woo-flexible-shipping) make sure to completely delete the old version first. If you install the new version without deleting the old one it may break your WordPress installation.
 
 == Changelog ==
+
+= 5.0.2 - 2024-10-28 =
+* Fixed rules table settings fatal error after PRO version deactivation
+* Fixed compatibility with Box Now Delivery Plugin
 
 = 5.0.1 - 2024-10-24 =
 * Fixed PHP notices in shipping method settings

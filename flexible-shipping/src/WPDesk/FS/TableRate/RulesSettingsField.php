@@ -218,6 +218,7 @@ class RulesSettingsField {
 					$settings[ $rule_key ]['conditions'][ $condition_key ] = $available_conditions[ $condition['condition_id'] ]->prepare_settings( $condition );
 				}
 			}
+			$settings[ $rule_key ]['conditions'] = array_values( $settings[ $rule_key ]['conditions'] );
 		}
 
 		return $settings;
