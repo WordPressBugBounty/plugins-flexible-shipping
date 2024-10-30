@@ -64,6 +64,7 @@ class SettingsFields implements Hookable {
 				'flexible_shipping_single',
 				'free_shipping',
 				'box_now_delivery',
+				'mondialrelay_official_shipping',
 			]
 		);
 	}
