@@ -2,14 +2,14 @@
 # This file is distributed under the same license as the Flexible Shipping plugin.
 msgid ""
 msgstr ""
-"Project-Id-Version: Flexible Shipping 5.0.6\n"
+"Project-Id-Version: Flexible Shipping 5.0.7\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/flexible-shipping\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-11-18T00:16:55+00:00\n"
+"POT-Creation-Date: 2024-11-19T09:26:32+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.11.0\n"
 "X-Domain: flexible-shipping\n"
@@ -745,6 +745,23 @@ msgstr ""
 
 #: src/WPDesk/FS/Plugin/UpgradeOnboarding.php:44
 msgid "The new feature allows the use of shipping cost calculation rules for all shipping methods available in WooCommerce, including Flat Rate and those added by other plugins. This provides greater control over delivery costs and allows you to take advantage of the existing features of other methods."
+msgstr ""
+
+#: src/WPDesk/FS/Plugin/UpgradeOnboarding.php:54
+msgid "Added support for WooCommerce 9.5"
+msgstr ""
+
+#: src/WPDesk/FS/Plugin/UpgradeOnboarding.php:55
+msgid "We’ve added support for WooCommerce 9.5 in this update, ensuring seamless compatibility with the latest Woo version."
+msgstr ""
+
+#: src/WPDesk/FS/Plugin/UpgradeOnboarding.php:64
+msgid "Black Friday is Here – Get 20% OFF All Plugin Bundles!"
+msgstr ""
+
+#. Translators: %1$s - <br/><br/>, %2$s - <a href="https://octol.io/fs-tr-adv-black-friday-popup" target="_blank">, %3$s - </a>.
+#: src/WPDesk/FS/Plugin/UpgradeOnboarding.php:67
+msgid "This Black Friday, customize every aspect of your store’s shipping without any technical headaches. Define complex rules, manage multiple packages, and scale your operations seamlessly with our premium bundles—now at an exclusive 20%% discount!%1$s%2$sDon’t hesitate! This offer is available only until November 30th.%3$s%4$s%5$sClick here to claim your discount%6$s"
 msgstr ""
 
 #. Translators: strong, version, /strong, strong, /strong, link, link.
