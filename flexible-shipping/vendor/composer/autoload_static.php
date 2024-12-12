@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit356647dfc7ebc12e098120c2634a6136
+class ComposerStaticInitbb42d353fae22599bc13c6bbd9e0563c
 {
     public static $prefixLengthsPsr4 = array (
         'W' => 
@@ -600,8 +600,13 @@ class ComposerStaticInit356647dfc7ebc12e098120c2634a6136
         'WPDesk\\FS\\TableRate\\Rule\\Condition\\Pro\\ProductDimensionHeight' => __DIR__ . '/../..' . '/src/WPDesk/FS/TableRate/Rule/Condition/Pro/ProductDimensionHeight.php',
         'WPDesk\\FS\\TableRate\\Rule\\Condition\\Pro\\ProductDimensionLength' => __DIR__ . '/../..' . '/src/WPDesk/FS/TableRate/Rule/Condition/Pro/ProductDimensionLength.php',
         'WPDesk\\FS\\TableRate\\Rule\\Condition\\Pro\\ProductDimensionWidth' => __DIR__ . '/../..' . '/src/WPDesk/FS/TableRate/Rule/Condition/Pro/ProductDimensionWidth.php',
+        'WPDesk\\FS\\TableRate\\Rule\\Condition\\Pro\\ProductFieldRange' => __DIR__ . '/../..' . '/src/WPDesk/FS/TableRate/Rule/Condition/Pro/ProductFieldRange.php',
+        'WPDesk\\FS\\TableRate\\Rule\\Condition\\Pro\\ProductFieldValue' => __DIR__ . '/../..' . '/src/WPDesk/FS/TableRate/Rule/Condition/Pro/ProductFieldValue.php',
+        'WPDesk\\FS\\TableRate\\Rule\\Condition\\Pro\\ProductStockQuantity' => __DIR__ . '/../..' . '/src/WPDesk/FS/TableRate/Rule/Condition/Pro/ProductStockQuantity.php',
+        'WPDesk\\FS\\TableRate\\Rule\\Condition\\Pro\\ProductStockStatus' => __DIR__ . '/../..' . '/src/WPDesk/FS/TableRate/Rule/Condition/Pro/ProductStockStatus.php',
         'WPDesk\\FS\\TableRate\\Rule\\Condition\\Pro\\ProductTag' => __DIR__ . '/../..' . '/src/WPDesk/FS/TableRate/Rule/Condition/Pro/ProductTag.php',
         'WPDesk\\FS\\TableRate\\Rule\\Condition\\Pro\\ShippingClass' => __DIR__ . '/../..' . '/src/WPDesk/FS/TableRate/Rule/Condition/Pro/ShippingClass.php',
+        'WPDesk\\FS\\TableRate\\Rule\\Condition\\Pro\\ShippingCost' => __DIR__ . '/../..' . '/src/WPDesk/FS/TableRate/Rule/Condition/Pro/ShippingCost.php',
         'WPDesk\\FS\\TableRate\\Rule\\Condition\\Pro\\TimeOfTheDay' => __DIR__ . '/../..' . '/src/WPDesk/FS/TableRate/Rule/Condition/Pro/TimeOfTheDay.php',
         'WPDesk\\FS\\TableRate\\Rule\\Condition\\Pro\\TotalOverallDimensions' => __DIR__ . '/../..' . '/src/WPDesk/FS/TableRate/Rule/Condition/Pro/TotalOverallDimensions.php',
         'WPDesk\\FS\\TableRate\\Rule\\Condition\\Pro\\UserRole' => __DIR__ . '/../..' . '/src/WPDesk/FS/TableRate/Rule/Condition/Pro/UserRole.php',
@@ -687,9 +692,9 @@ class ComposerStaticInit356647dfc7ebc12e098120c2634a6136
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit356647dfc7ebc12e098120c2634a6136::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit356647dfc7ebc12e098120c2634a6136::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit356647dfc7ebc12e098120c2634a6136::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitbb42d353fae22599bc13c6bbd9e0563c::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitbb42d353fae22599bc13c6bbd9e0563c::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInitbb42d353fae22599bc13c6bbd9e0563c::$classMap;
 
         }, null, ClassLoader::class);
     }

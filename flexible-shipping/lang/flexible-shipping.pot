@@ -2,14 +2,14 @@
 # This file is distributed under the same license as the Flexible Shipping plugin.
 msgid ""
 msgstr ""
-"Project-Id-Version: Flexible Shipping 5.1.0\n"
+"Project-Id-Version: Flexible Shipping 5.1.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/flexible-shipping\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-12-09T09:42:58+00:00\n"
+"POT-Creation-Date: 2024-12-12T10:23:29+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.11.0\n"
 "X-Domain: flexible-shipping\n"
@@ -827,6 +827,7 @@ msgstr ""
 
 #: src/WPDesk/FS/Shipment/ModifyOrderTable.php:66
 #: src/WPDesk/FS/Shipment/ModifyOrderTable.php:73
+#: src/WPDesk/FS/TableRate/Rule/Condition/Pro/ShippingCost.php:19
 msgid "Shipping"
 msgstr ""
 
@@ -1181,8 +1182,13 @@ msgstr ""
 #: src/WPDesk/FS/TableRate/Rule/Condition/Pro/ProductDimensionHeight.php:27
 #: src/WPDesk/FS/TableRate/Rule/Condition/Pro/ProductDimensionLength.php:27
 #: src/WPDesk/FS/TableRate/Rule/Condition/Pro/ProductDimensionWidth.php:27
+#: src/WPDesk/FS/TableRate/Rule/Condition/Pro/ProductFieldRange.php:21
+#: src/WPDesk/FS/TableRate/Rule/Condition/Pro/ProductFieldValue.php:19
+#: src/WPDesk/FS/TableRate/Rule/Condition/Pro/ProductStockQuantity.php:22
+#: src/WPDesk/FS/TableRate/Rule/Condition/Pro/ProductStockStatus.php:19
 #: src/WPDesk/FS/TableRate/Rule/Condition/Pro/ProductTag.php:31
 #: src/WPDesk/FS/TableRate/Rule/Condition/Pro/ShippingClass.php:29
+#: src/WPDesk/FS/TableRate/Rule/Condition/Pro/ShippingCost.php:22
 #: src/WPDesk/FS/TableRate/Rule/Condition/Pro/TimeOfTheDay.php:29
 #: src/WPDesk/FS/TableRate/Rule/Condition/Pro/TotalOverallDimensions.php:31
 #: src/WPDesk/FS/TableRate/Rule/Condition/Pro/UserRole.php:29
@@ -1211,6 +1217,10 @@ msgstr ""
 #: src/WPDesk/FS/TableRate/Rule/Condition/Pro/ProductDimensionHeight.php:23
 #: src/WPDesk/FS/TableRate/Rule/Condition/Pro/ProductDimensionLength.php:23
 #: src/WPDesk/FS/TableRate/Rule/Condition/Pro/ProductDimensionWidth.php:23
+#: src/WPDesk/FS/TableRate/Rule/Condition/Pro/ProductFieldRange.php:17
+#: src/WPDesk/FS/TableRate/Rule/Condition/Pro/ProductFieldValue.php:15
+#: src/WPDesk/FS/TableRate/Rule/Condition/Pro/ProductStockQuantity.php:18
+#: src/WPDesk/FS/TableRate/Rule/Condition/Pro/ProductStockStatus.php:15
 #: src/WPDesk/FS/TableRate/Rule/Condition/Pro/ProductTag.php:27
 #: src/WPDesk/FS/TableRate/Rule/Condition/Pro/ShippingClass.php:25
 #: src/WPDesk/FS/TableRate/Rule/Condition/Pro/TotalOverallDimensions.php:27
@@ -1259,12 +1269,52 @@ msgstr ""
 msgid "Shipping cost based on the product's width"
 msgstr ""
 
+#: src/WPDesk/FS/TableRate/Rule/Condition/Pro/ProductFieldRange.php:15
+msgid "Field range"
+msgstr ""
+
+#: src/WPDesk/FS/TableRate/Rule/Condition/Pro/ProductFieldRange.php:16
+msgid "Shipping cost based on the product's field range"
+msgstr ""
+
+#: src/WPDesk/FS/TableRate/Rule/Condition/Pro/ProductFieldValue.php:13
+msgid "Field value"
+msgstr ""
+
+#: src/WPDesk/FS/TableRate/Rule/Condition/Pro/ProductFieldValue.php:14
+msgid "Shipping cost based on the product's field value"
+msgstr ""
+
+#: src/WPDesk/FS/TableRate/Rule/Condition/Pro/ProductStockQuantity.php:16
+msgid "Stock quantity"
+msgstr ""
+
+#: src/WPDesk/FS/TableRate/Rule/Condition/Pro/ProductStockQuantity.php:17
+msgid "Shipping cost based on the product's stock quantity"
+msgstr ""
+
+#: src/WPDesk/FS/TableRate/Rule/Condition/Pro/ProductStockStatus.php:13
+msgid "Stock status"
+msgstr ""
+
+#: src/WPDesk/FS/TableRate/Rule/Condition/Pro/ProductStockStatus.php:14
+msgid "Shipping cost based on the product's stock status"
+msgstr ""
+
 #: src/WPDesk/FS/TableRate/Rule/Condition/Pro/ProductTag.php:26
 msgid "Product tag"
 msgstr ""
 
 #: src/WPDesk/FS/TableRate/Rule/Condition/Pro/ShippingClass.php:24
 msgid "Shipping class"
+msgstr ""
+
+#: src/WPDesk/FS/TableRate/Rule/Condition/Pro/ShippingCost.php:17
+msgid "Shipping cost"
+msgstr ""
+
+#: src/WPDesk/FS/TableRate/Rule/Condition/Pro/ShippingCost.php:18
+msgid "Shipping cost based on current shipping cost"
 msgstr ""
 
 #: src/WPDesk/FS/TableRate/Rule/Condition/Pro/TimeOfTheDay.php:24
@@ -1361,7 +1411,7 @@ msgid "Enter shipment cost for this rule."
 msgstr ""
 
 #. Translators: rule cost.
-#: src/WPDesk/FS/TableRate/Rule/CostsCalculator.php:223
+#: src/WPDesk/FS/TableRate/Rule/CostsCalculator.php:224
 msgid "Calculated rule cost: %1$s %2$s"
 msgstr ""
 
@@ -1974,19 +2024,19 @@ msgstr ""
 msgid "The new feature allows you to combine Live Rates and Table Rate, providing the ability to use automatically calculated Live Rates while also adjusting shipping costs using Table Rate with the free version of %1$sFlexible Shipping%2$s or %3$sFlexible Shipping PRO%4$s.%5$sThis way, you can now have greater control over the final delivery cost, precisely defining additional charges or discounts for each shipping method."
 msgstr ""
 
-#: vendor_prefixed/octolize/wp-onboarding/src/Onboarding/PluginUpgrade/PluginUpgradeOnboardingFactory.php:105
+#: vendor_prefixed/octolize/wp-onboarding/src/Onboarding/PluginUpgrade/PluginUpgradeOnboardingFactory.php:107
 msgid "Thank you for updating %1$s!"
 msgstr ""
 
-#: vendor_prefixed/octolize/wp-onboarding/src/Onboarding/PluginUpgrade/PluginUpgradeOnboardingFactory.php:105
+#: vendor_prefixed/octolize/wp-onboarding/src/Onboarding/PluginUpgrade/PluginUpgradeOnboardingFactory.php:107
 msgid "It is really important to keep the plugins up to date. We have implemented some improvements and new functionalities. Find out what has changed:"
 msgstr ""
 
-#: vendor_prefixed/octolize/wp-onboarding/src/Onboarding/PluginUpgrade/PluginUpgradeOnboardingFactory.php:128
+#: vendor_prefixed/octolize/wp-onboarding/src/Onboarding/PluginUpgrade/PluginUpgradeOnboardingFactory.php:130
 msgid "I'm not interested"
 msgstr ""
 
-#: vendor_prefixed/octolize/wp-onboarding/src/Onboarding/PluginUpgrade/PluginUpgradeOnboardingFactory.php:128
+#: vendor_prefixed/octolize/wp-onboarding/src/Onboarding/PluginUpgrade/PluginUpgradeOnboardingFactory.php:130
 msgid "Thanks for letting me know"
 msgstr ""
 

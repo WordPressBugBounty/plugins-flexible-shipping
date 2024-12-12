@@ -183,7 +183,8 @@ class CostsCalculator {
 	/**
 	 * @return float
 	 */
-	private function calculate_cost( $calculated_cost = null ) {
+	private function calculate_cost( $calculated_cost = null ): float {
+		$calculated_cost = (float) $calculated_cost ?? 0.0;
 		/**
 		 * Rules calculation function.
 		 * Default rules calculation is sum.
@@ -198,7 +199,7 @@ class CostsCalculator {
 		);
 
 		$this->shipping_contents->reset_contents();
-		$this->shipping_contents->set_calculated_shipping_cost( $calculated_cost ?? 0.0 );
+		$this->shipping_contents->set_calculated_shipping_cost( $calculated_cost );
 		foreach ( $this->prepared_rules as $rule_index => $calculated_rule ) {
 			$this->shipping_contents = $calculated_rule->process_shipping_contents( $this->shipping_contents );
 
@@ -248,7 +249,7 @@ class CostsCalculator {
 		 * @param float $calculated_cost          Calculated cost.
 		 * @param array $shipping_method_settings Current shipping method settings.
 		 */
-		return apply_filters( 'flexible-shipping/shipping-method/calculated-cost', $calculated_cost, $this->method_settings->get_raw_settings() );
+		return (float) apply_filters( 'flexible-shipping/shipping-method/calculated-cost', $calculated_cost, $this->method_settings->get_raw_settings() );
 	}
 
 	/**
