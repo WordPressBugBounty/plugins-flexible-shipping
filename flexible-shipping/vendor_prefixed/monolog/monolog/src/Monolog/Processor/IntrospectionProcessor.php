@@ -12,7 +12,7 @@ declare (strict_types=1);
 namespace FSVendor\Monolog\Processor;
 
 use FSVendor\Monolog\Logger;
-use FSVendor\Psr\Log\LogLevel;
+use Psr\Log\LogLevel;
 /**
  * Injects line/file:class/function where the log message came from
  *

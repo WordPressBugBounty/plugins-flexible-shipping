@@ -3,7 +3,7 @@
 namespace FSVendor\WPDesk\Logger\WC;
 
 use FSVendor\Monolog\Logger;
-use FSVendor\Psr\Log\LogLevel;
+use Psr\Log\LogLevel;
 use WC_Log_Levels;
 /**
  * Can decorate monolog with WC_Logger_Interface

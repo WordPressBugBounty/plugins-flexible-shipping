@@ -3,7 +3,7 @@
 namespace WPDesk\FS\TableRate;
 
 use FSVendor\WPDesk\PluginBuilder\Plugin\Hookable;
-use FSVendor\Psr\Log\LoggerInterface;
+use Psr\Log\LoggerInterface;
 
 /**
  * Can convert from shop currency to current currency.

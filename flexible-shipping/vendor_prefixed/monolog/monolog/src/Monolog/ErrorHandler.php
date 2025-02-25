@@ -11,8 +11,8 @@ declare (strict_types=1);
  */
 namespace FSVendor\Monolog;
 
-use FSVendor\Psr\Log\LoggerInterface;
-use FSVendor\Psr\Log\LogLevel;
+use Psr\Log\LoggerInterface;
+use Psr\Log\LogLevel;
 /**
  * Monolog error handler
  *

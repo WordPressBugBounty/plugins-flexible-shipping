@@ -7,7 +7,7 @@
  */
 namespace FSVendor\WPDesk\WooCommerce\CurrencySwitchers;
 
-use FSVendor\Psr\Log\LoggerInterface;
+use Psr\Log\LoggerInterface;
 use FSVendor\WPDesk\PluginBuilder\Plugin\Hookable;
 /**
  * Can add filter to convert currency.

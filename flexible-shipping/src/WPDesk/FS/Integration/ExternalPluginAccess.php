@@ -7,7 +7,7 @@
 
 namespace WPDesk\FS\Integration;
 
-use FSVendor\Psr\Log\LoggerInterface;
+use Psr\Log\LoggerInterface;
 
 /**
  * Provides plugin data for integrations.

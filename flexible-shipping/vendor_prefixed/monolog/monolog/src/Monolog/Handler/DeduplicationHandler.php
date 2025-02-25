@@ -12,7 +12,7 @@ declare (strict_types=1);
 namespace FSVendor\Monolog\Handler;
 
 use FSVendor\Monolog\Logger;
-use FSVendor\Psr\Log\LogLevel;
+use Psr\Log\LogLevel;
 /**
  * Simple handler wrapper that deduplicates log records across multiple requests
  *

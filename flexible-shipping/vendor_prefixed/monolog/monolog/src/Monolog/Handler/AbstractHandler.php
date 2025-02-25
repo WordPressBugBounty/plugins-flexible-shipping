@@ -13,7 +13,7 @@ namespace FSVendor\Monolog\Handler;
 
 use FSVendor\Monolog\Logger;
 use FSVendor\Monolog\ResettableInterface;
-use FSVendor\Psr\Log\LogLevel;
+use Psr\Log\LogLevel;
 /**
  * Base Handler class providing basic level/bubble support
  *
