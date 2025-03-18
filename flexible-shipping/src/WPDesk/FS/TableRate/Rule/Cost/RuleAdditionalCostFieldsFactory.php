@@ -7,11 +7,11 @@
 
 namespace WPDesk\FS\TableRate\Rule\Cost;
 
+
+
 use FSVendor\WPDesk\Forms\Field;
-use FSVendor\WPDesk\Forms\Field\InputTextField;
 use FSVendor\WPDesk\Forms\FieldProvider;
 use FSVendor\WPDesk\Forms\Renderer\JsonNormalizedRenderer;
-
 
 /**
  * Can create additional costs fields.
@@ -66,25 +66,25 @@ class RuleAdditionalCostFieldsFactory implements FieldProvider {
 				->add_class( 'wc_input_decimal' )
 				->add_class( 'hs-beacon-search' )
 				->add_class( 'additional-cost-cost' )
-				->add_data( 'beacon_search', __( 'additional cost', 'flexible-shipping' ) )
-				->set_placeholder( __( 'additional cost', 'flexible-shipping' ) )
-				->set_label( __( 'additional cost is', 'flexible-shipping' ) )
+				->add_data( 'beacon_search', __( 'additional cost', 'flexible-shipping-rules' ) )
+				->set_placeholder( __( 'additional cost', 'flexible-shipping-rules' ) )
+				->set_label( __( 'additional cost is', 'flexible-shipping-rules' ) )
 				->add_data( 'suffix', get_woocommerce_currency_symbol() ),
 			( new Field\InputNumberField() )
 				->set_name( self::PER_VALUE )
 				->add_class( 'wc_input_decimal' )
 				->add_class( 'hs-beacon-search' )
 				->add_class( 'additional-cost-per' )
-				->add_data( 'beacon_search', __( 'additional cost per', 'flexible-shipping' ) )
-				->set_placeholder( __( 'per', 'flexible-shipping' ) )
-				->set_label( __( 'per', 'flexible-shipping' ) ),
+				->add_data( 'beacon_search', __( 'additional cost per', 'flexible-shipping-rules' ) )
+				->set_placeholder( __( 'per', 'flexible-shipping-rules' ) )
+				->set_label( __( 'per', 'flexible-shipping-rules' ) ),
 			( new Field\SelectField() )
 				->set_name( self::BASED_ON )
 				->set_options( $this->get_based_on_options() )
 				->add_class( 'wc_input_decimal' )
 				->add_class( 'hs-beacon-search' )
 				->add_class( 'additional-cost-based-on' )
-				->add_data( 'beacon_search', __( 'additional cost per', 'flexible-shipping' ) ),
+				->add_data( 'beacon_search', __( 'additional cost per', 'flexible-shipping-rules' ) ),
 		);
 	}
 

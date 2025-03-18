@@ -21,11 +21,11 @@ class ShippingClass extends AbstractCondition {
 	 */
 	public function __construct( int $priority = 10 ) {
 		$this->condition_id = self::CONDITION_ID;
-		$this->name         = __( 'Shipping class', 'flexible-shipping' );
-		$this->group        = __( 'Product', 'flexible-shipping' );
+		$this->name         = __( 'Shipping class', 'flexible-shipping-rules' );
+		$this->group        = __( 'Product', 'flexible-shipping-rules' );
 		$this->priority     = $priority;
 		$this->is_disabled  = true;
 
-		$this->name .= ' ' . __( '(PRO feature)', 'flexible-shipping' );
+		$this->name .= ' ' . __( '(PRO feature)', 'flexible-shipping-rules' );
 	}
 }
