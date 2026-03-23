@@ -492,6 +492,7 @@ return array(
     'FSVendor\\WPDesk_Translatable' => $baseDir . '/vendor_prefixed/wpdesk/wp-builder/src/Plugin/WithoutNamespace/Translatable.php',
     'Flexible_Shipping_Contextual_Info' => $baseDir . '/classes/Flexible_Shipping_Contextual_Info.php',
     'Flexible_Shipping_Plugin' => $baseDir . '/classes/class-flexible-shipping-plugin.php',
+    'WPDesk\\FS\\Admin\\MarketplaceSuggestionsRedirect' => $baseDir . '/src/WPDesk/FS/Admin/MarketplaceSuggestionsRedirect.php',
     'WPDesk\\FS\\AdvertMetabox\\FsiePluginAdvertMetabox' => $baseDir . '/src/WPDesk/FS/AdvertMetabox/FsiePluginAdvertMetabox.php',
     'WPDesk\\FS\\AdvertMetabox\\ProPluginAdvertMetabox' => $baseDir . '/src/WPDesk/FS/AdvertMetabox/ProPluginAdvertMetabox.php',
     'WPDesk\\FS\\Blocks\\FreeShipping\\FreeShippingBlock' => $baseDir . '/src/WPDesk/FS/Blocks/FreeShipping/FreeShippingBlock.php',

@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitb4dfdba24e8391bd7aab385434f28275
+class ComposerStaticInit6f0dde6202559d9829dda4cc5af7b681
 {
     public static $prefixLengthsPsr4 = array (
         'W' =>
@@ -507,6 +507,7 @@ class ComposerStaticInitb4dfdba24e8391bd7aab385434f28275
         'FSVendor\\WPDesk_Translatable' => __DIR__ . '/../..' . '/vendor_prefixed/wpdesk/wp-builder/src/Plugin/WithoutNamespace/Translatable.php',
         'Flexible_Shipping_Contextual_Info' => __DIR__ . '/../..' . '/classes/Flexible_Shipping_Contextual_Info.php',
         'Flexible_Shipping_Plugin' => __DIR__ . '/../..' . '/classes/class-flexible-shipping-plugin.php',
+        'WPDesk\\FS\\Admin\\MarketplaceSuggestionsRedirect' => __DIR__ . '/../..' . '/src/WPDesk/FS/Admin/MarketplaceSuggestionsRedirect.php',
         'WPDesk\\FS\\AdvertMetabox\\FsiePluginAdvertMetabox' => __DIR__ . '/../..' . '/src/WPDesk/FS/AdvertMetabox/FsiePluginAdvertMetabox.php',
         'WPDesk\\FS\\AdvertMetabox\\ProPluginAdvertMetabox' => __DIR__ . '/../..' . '/src/WPDesk/FS/AdvertMetabox/ProPluginAdvertMetabox.php',
         'WPDesk\\FS\\Blocks\\FreeShipping\\FreeShippingBlock' => __DIR__ . '/../..' . '/src/WPDesk/FS/Blocks/FreeShipping/FreeShippingBlock.php',
@@ -705,9 +706,9 @@ class ComposerStaticInitb4dfdba24e8391bd7aab385434f28275
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitb4dfdba24e8391bd7aab385434f28275::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitb4dfdba24e8391bd7aab385434f28275::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInitb4dfdba24e8391bd7aab385434f28275::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit6f0dde6202559d9829dda4cc5af7b681::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit6f0dde6202559d9829dda4cc5af7b681::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit6f0dde6202559d9829dda4cc5af7b681::$classMap;
 
         }, null, ClassLoader::class);
     }
