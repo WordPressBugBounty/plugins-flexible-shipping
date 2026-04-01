@@ -87,6 +87,8 @@ use WPDesk\FS\TableRate\ShippingMethod\Duplicate\DuplicateTracker;
 use WPDesk\FS\TableRate\ShippingMethod\Duplicate\DuplicatorChecker;
 use WPDesk\FS\TableRate\ShippingMethod\Management\ShippingMethodManagement;
 use WPDesk\FS\TableRate\ShippingMethod\MethodDescription;
+use WPDesk\FS\TableRate\ShippingMethod\MethodLogoCheckoutBlocksAssets;
+use WPDesk\FS\TableRate\ShippingMethod\MethodLogoSettingsField;
 use WPDesk\FS\TableRate\ShippingMethod\MethodTitle;
 use WPDesk\FS\TableRate\ShippingMethodSingle;
 use WPDesk\FS\TableRate\ShippingMethodsIntegration\ShippingRate;
@@ -270,6 +272,8 @@ class Flexible_Shipping_Plugin extends AbstractPlugin implements HookableCollect
 
 		$this->add_hookable( new MethodTitle() );
 		$this->add_hookable( new MethodDescription( $this->renderer ) );
+		$this->add_hookable( new MethodLogoCheckoutBlocksAssets( $this->get_plugin_url(), $this->scripts_version ) );
+		$this->add_hookable( new MethodLogoSettingsField() );
 
 		$this->add_hookable( new Exporter() );
 		$this->add_hookable( new ImporterData() );
@@ -532,6 +536,7 @@ class Flexible_Shipping_Plugin extends AbstractPlugin implements HookableCollect
 			false,
 			false
 		) )->hooks();
+
 	}
 
 

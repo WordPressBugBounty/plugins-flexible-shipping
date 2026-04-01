@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit6f0dde6202559d9829dda4cc5af7b681
+class ComposerStaticInitae3f9822c8831036beb147d3aa86c7c0
 {
     public static $prefixLengthsPsr4 = array (
         'W' =>
@@ -667,6 +667,9 @@ class ComposerStaticInit6f0dde6202559d9829dda4cc5af7b681
         'WPDesk\\FS\\TableRate\\ShippingMethod\\FreeShippingCalculator' => __DIR__ . '/../..' . '/src/WPDesk/FS/TableRate/ShippingMethod/FreeShippingCalculator.php',
         'WPDesk\\FS\\TableRate\\ShippingMethod\\Management\\ShippingMethodManagement' => __DIR__ . '/../..' . '/src/WPDesk/FS/TableRate/ShippingMethod/Management/ShippingMethodManagement.php',
         'WPDesk\\FS\\TableRate\\ShippingMethod\\MethodDescription' => __DIR__ . '/../..' . '/src/WPDesk/FS/TableRate/ShippingMethod/MethodDescription.php',
+        'WPDesk\\FS\\TableRate\\ShippingMethod\\MethodLogo' => __DIR__ . '/../..' . '/src/WPDesk/FS/TableRate/ShippingMethod/MethodLogo.php',
+        'WPDesk\\FS\\TableRate\\ShippingMethod\\MethodLogoCheckoutBlocksAssets' => __DIR__ . '/../..' . '/src/WPDesk/FS/TableRate/ShippingMethod/MethodLogoCheckoutBlocksAssets.php',
+        'WPDesk\\FS\\TableRate\\ShippingMethod\\MethodLogoSettingsField' => __DIR__ . '/../..' . '/src/WPDesk/FS/TableRate/ShippingMethod/MethodLogoSettingsField.php',
         'WPDesk\\FS\\TableRate\\ShippingMethod\\MethodSettings' => __DIR__ . '/../..' . '/src/WPDesk/FS/TableRate/ShippingMethod/MethodSettings.php',
         'WPDesk\\FS\\TableRate\\ShippingMethod\\MethodTitle' => __DIR__ . '/../..' . '/src/WPDesk/FS/TableRate/ShippingMethod/MethodTitle.php',
         'WPDesk\\FS\\TableRate\\ShippingMethod\\RateCalculator' => __DIR__ . '/../..' . '/src/WPDesk/FS/TableRate/ShippingMethod/RateCalculator.php',
@@ -706,9 +709,9 @@ class ComposerStaticInit6f0dde6202559d9829dda4cc5af7b681
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit6f0dde6202559d9829dda4cc5af7b681::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit6f0dde6202559d9829dda4cc5af7b681::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit6f0dde6202559d9829dda4cc5af7b681::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitae3f9822c8831036beb147d3aa86c7c0::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitae3f9822c8831036beb147d3aa86c7c0::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInitae3f9822c8831036beb147d3aa86c7c0::$classMap;
 
         }, null, ClassLoader::class);
     }
