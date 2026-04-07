@@ -3,8 +3,8 @@ Contributors: octolize,grola,sebastianpisula
 Donate link: https://octol.io/fs-repo-up
 Tags: WooCommerce shipping, weight based shipping, Table Rate Shipping, conditional shipping, advanced shipping
 Requires at least: 5.8
-Tested up to: 7.0
-Stable tag: 6.6.0
+Tested up to: 6.9
+Stable tag: 6.6.1
 Requires PHP: 7.4
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -309,6 +309,9 @@ If you encounter any issues with the Free version, you can post a topic on the [
 If you are upgrading from the old Flexible Shipping version (1.3.2, woo-flexible-shipping) make sure to completely delete the old version first. If you install the new version without deleting the old one it may break your WordPress installation.
 
 == Changelog ==
+
+= 6.6.1 - 2026-04-06 =
+* Added support for WooCommerce 10.7
 
 = 6.6.0 - 2026-04-01 =
 * Added shipping method description support in WooCommerce block checkout.
