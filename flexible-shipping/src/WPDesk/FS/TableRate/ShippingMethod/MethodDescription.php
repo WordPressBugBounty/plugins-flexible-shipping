@@ -58,6 +58,10 @@ class MethodDescription implements Hookable {
 				continue;
 			}
 
+			if ( ! $this->supports_native_rate_description( $rate ) ) {
+				continue;
+			}
+
 			if ( '' !== $rate->get_description() ) {
 				continue;
 			}
@@ -113,6 +117,10 @@ class MethodDescription implements Hookable {
 			return $description;
 		}
 
+		if ( ! method_exists( $method, 'get_description' ) ) {
+			return '';
+		}
+
 		return $method->get_description();
 	}
 
@@ -161,6 +169,15 @@ class MethodDescription implements Hookable {
 	 */
 	private function sanitize_method_description_for_rate( $description ) {
 		return trim( wp_strip_all_tags( html_entity_decode( $description, ENT_QUOTES, 'UTF-8' ) ) );
+	}
+
+	/**
+	 * @param object $rate .
+	 *
+	 * @return bool
+	 */
+	private function supports_native_rate_description( $rate ) {
+		return method_exists( $rate, 'get_description' ) && method_exists( $rate, 'set_description' );
 	}
 
 	/**
