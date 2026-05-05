@@ -15,6 +15,8 @@ use WC_Shipping_Method;
 use WPDesk\FS\TableRate\Rule\Condition\ConditionsFactory;
 use WPDesk\FS\TableRate\Rule\Cost\RuleAdditionalCostFactory;
 use WPDesk\FS\TableRate\Rule\Cost\RuleCostFieldsFactory;
+use WPDesk\FS\TableRate\ShippingMethod\CommonMethodSettings;
+use WPDesk\FS\TableRate\ShippingMethod\FreeShippingThresholdRuleValidator;
 use WPDesk\FS\TableRate\ShippingMethod\RateCalculatorFactory;
 use WPDesk\FS\TableRate\ShippingMethod\SingleMethodSettings;
 use WPDesk\FS\TableRate\Tax\TaxCalculator;
@@ -130,6 +132,122 @@ class ShippingMethodSingle extends WC_Shipping_Method {
 	}
 
 	/**
+	 * Generate Price Input HTML.
+	 *
+	 * @param string $key  Field key.
+	 * @param array  $data Field data.
+	 *
+	 * @return string
+	 */
+	public function generate_price_html( $key, $data ) {
+		if ( CommonMethodSettings::METHOD_FREE_SHIPPING === $key ) {
+			$data = $this->append_free_shipping_threshold_validation_error( $data );
+		}
+
+		if ( CommonMethodSettings::METHOD_FREE_SHIPPING !== $key || empty( $data['error_message'] ) ) {
+			return parent::generate_price_html( $key, $data );
+		}
+
+		$field_key = $this->get_field_key( $key );
+		$defaults  = [
+			'title'             => '',
+			'disabled'          => false,
+			'class'             => '',
+			'css'               => '',
+			'placeholder'       => '',
+			'type'              => 'text',
+			'desc_tip'          => false,
+			'description'       => '',
+			'custom_attributes' => [],
+			'error_message'     => '',
+		];
+
+		$data = wp_parse_args( $data, $defaults );
+
+		ob_start();
+		include __DIR__ . '/views/html-price-with-validation-error.php';
+
+		return ob_get_clean();
+	}
+
+	/**
+	 * @param array $field_settings Free shipping threshold field settings.
+	 *
+	 * @return array
+	 */
+	private function append_free_shipping_threshold_validation_error( array $field_settings ) {
+		$method_rules = $this->get_method_rules_for_threshold_validation();
+		$threshold    = $this->get_option( CommonMethodSettings::METHOD_FREE_SHIPPING );
+
+		if ( ( new FreeShippingThresholdRuleValidator() )->is_valid( $threshold, $method_rules ) ) {
+			return $field_settings;
+		}
+
+		$field_settings['class']                             = trim( ( $field_settings['class'] ?? '' ) . ' fs-free-shipping-threshold-error' );
+		$field_settings['css']                               = trim( ( $field_settings['css'] ?? '' ) . ' border-color: #d63638; box-shadow: 0 0 0 1px #d63638;' );
+		$field_settings['custom_attributes']['aria-invalid'] = 'true';
+		$field_settings['error_message']                     = $this->get_free_shipping_threshold_validation_message( $threshold );
+
+		return $field_settings;
+	}
+
+	/**
+	 * @return array
+	 */
+	private function get_method_rules_for_threshold_validation() {
+		$method_rules = $this->get_option( CommonMethodSettings::METHOD_RULES, [] );
+
+		if ( is_string( $method_rules ) ) {
+			$decoded_method_rules = json_decode( $method_rules, true );
+
+			return is_array( $decoded_method_rules ) ? $decoded_method_rules : [];
+		}
+
+		return is_array( $method_rules ) ? $method_rules : [];
+	}
+
+	/**
+	 * @return string
+	 */
+	private function get_free_shipping_threshold_validation_message( $threshold ) {
+		$docs_url         = 'pl_PL' === get_user_locale() ? 'https://octol.io/fs-shipping-threshold-pl' : 'https://octol.io/fs-shipping-threshold';
+		$threshold_amount = $this->format_price_for_threshold_validation_message( $threshold );
+		$zero_amount      = $this->format_price_for_threshold_validation_message( 0 );
+
+		if ( 'pl_PL' === get_user_locale() ) {
+			return sprintf(
+				// Translators: documentation link opening tag, closing tag, free shipping threshold amount, zero cost amount.
+				__( 'Upewnij się, że zakres od progu darmowej wysyłki wzwyż jest również pokryty odpowiednią regułą w tabeli poniżej, np. KIEDY: Cena jest od %3$s do [puste], koszt wynosi %4$s.<br />%1$sDowiedz się, jak skonfigurować próg darmowej wysyłki w regułach obliczania kosztów →%2$s', 'flexible-shipping' ),
+				'<a href="' . esc_url( $docs_url ) . '" target="_blank">',
+				'</a>',
+				esc_html( $threshold_amount ),
+				esc_html( $zero_amount )
+			);
+		}
+
+		return sprintf(
+			// Translators: documentation link opening tag, closing tag, free shipping threshold amount, zero cost amount.
+			__( 'Make sure the range from the free shipping threshold upwards is also covered by the corresponding rule in the table below, e.g. WHEN: Price is from %3$s to [empty], rule cost is %4$s.<br />%1$sLearn how to configure the free shipping threshold in the cost calculation rules →%2$s', 'flexible-shipping' ),
+			'<a href="' . esc_url( $docs_url ) . '" target="_blank">',
+			'</a>',
+			esc_html( $threshold_amount ),
+			esc_html( $zero_amount )
+		);
+	}
+
+	/**
+	 * @param mixed $price Price amount.
+	 *
+	 * @return string
+	 */
+	private function format_price_for_threshold_validation_message( $price ) {
+		$formatted_price = wp_strip_all_tags( wc_price( (float) $price ) );
+		$formatted_price = html_entity_decode( $formatted_price, ENT_QUOTES, get_bloginfo( 'charset' ) );
+
+		return trim( str_replace( html_entity_decode( '&nbsp;', ENT_QUOTES, get_bloginfo( 'charset' ) ), ' ', $formatted_price ) );
+	}
+
+	/**
 	 * .
 	 */
 	public function init_instance_settings() {
@@ -164,7 +282,7 @@ class ShippingMethodSingle extends WC_Shipping_Method {
 	 * @return array
 	 */
 	public function process_integrations_settings( $settings ) {
-		$settings = apply_filters( 'flexible_shipping_process_admin_options', $settings );
+		$settings                   = apply_filters( 'flexible_shipping_process_admin_options', $settings );
 		$settings['method_logo_id'] = absint( $settings['method_logo_id'] ?? 0 );
 
 		return $settings;

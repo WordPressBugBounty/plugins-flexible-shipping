@@ -650,6 +650,7 @@ return array(
     'WPDesk\\FS\\TableRate\\ShippingMethod\\Duplicate\\DuplicateTracker' => $baseDir . '/src/WPDesk/FS/TableRate/ShippingMethod/Duplicate/DuplicateTracker.php',
     'WPDesk\\FS\\TableRate\\ShippingMethod\\Duplicate\\DuplicatorChecker' => $baseDir . '/src/WPDesk/FS/TableRate/ShippingMethod/Duplicate/DuplicatorChecker.php',
     'WPDesk\\FS\\TableRate\\ShippingMethod\\FreeShippingCalculator' => $baseDir . '/src/WPDesk/FS/TableRate/ShippingMethod/FreeShippingCalculator.php',
+    'WPDesk\\FS\\TableRate\\ShippingMethod\\FreeShippingThresholdRuleValidator' => $baseDir . '/src/WPDesk/FS/TableRate/ShippingMethod/FreeShippingThresholdRuleValidator.php',
     'WPDesk\\FS\\TableRate\\ShippingMethod\\Management\\ShippingMethodManagement' => $baseDir . '/src/WPDesk/FS/TableRate/ShippingMethod/Management/ShippingMethodManagement.php',
     'WPDesk\\FS\\TableRate\\ShippingMethod\\MethodDescription' => $baseDir . '/src/WPDesk/FS/TableRate/ShippingMethod/MethodDescription.php',
     'WPDesk\\FS\\TableRate\\ShippingMethod\\MethodLogo' => $baseDir . '/src/WPDesk/FS/TableRate/ShippingMethod/MethodLogo.php',

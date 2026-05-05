@@ -665,6 +665,7 @@ class ComposerStaticInitae3f9822c8831036beb147d3aa86c7c0
         'WPDesk\\FS\\TableRate\\ShippingMethod\\Duplicate\\DuplicateTracker' => __DIR__ . '/../..' . '/src/WPDesk/FS/TableRate/ShippingMethod/Duplicate/DuplicateTracker.php',
         'WPDesk\\FS\\TableRate\\ShippingMethod\\Duplicate\\DuplicatorChecker' => __DIR__ . '/../..' . '/src/WPDesk/FS/TableRate/ShippingMethod/Duplicate/DuplicatorChecker.php',
         'WPDesk\\FS\\TableRate\\ShippingMethod\\FreeShippingCalculator' => __DIR__ . '/../..' . '/src/WPDesk/FS/TableRate/ShippingMethod/FreeShippingCalculator.php',
+        'WPDesk\\FS\\TableRate\\ShippingMethod\\FreeShippingThresholdRuleValidator' => __DIR__ . '/../..' . '/src/WPDesk/FS/TableRate/ShippingMethod/FreeShippingThresholdRuleValidator.php',
         'WPDesk\\FS\\TableRate\\ShippingMethod\\Management\\ShippingMethodManagement' => __DIR__ . '/../..' . '/src/WPDesk/FS/TableRate/ShippingMethod/Management/ShippingMethodManagement.php',
         'WPDesk\\FS\\TableRate\\ShippingMethod\\MethodDescription' => __DIR__ . '/../..' . '/src/WPDesk/FS/TableRate/ShippingMethod/MethodDescription.php',
         'WPDesk\\FS\\TableRate\\ShippingMethod\\MethodLogo' => __DIR__ . '/../..' . '/src/WPDesk/FS/TableRate/ShippingMethod/MethodLogo.php',
