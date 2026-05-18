@@ -2,6 +2,7 @@
 
 namespace FSVendor\Octolize\ShippingExtensions;
 
+use FSVendor\Octolize\ShippingExtensions\Plugin\PluginFactory;
 use FSVendor\Octolize\ShippingExtensions\Tracker\Tracker;
 use FSVendor\Octolize\ShippingExtensions\Tracker\ViewPageTracker;
 use FSVendor\WPDesk\PluginBuilder\Plugin\Hookable;
@@ -13,7 +14,7 @@ use FSVendor\WPDesk_Plugin_Info;
 class ShippingExtensions implements Hookable
 {
     use HookableParent;
-    private const VERSION = 2;
+    private const VERSION = 4;
     private const OCTOLIZE_WP_SHIPPING_EXTENSIONS_INITIATED_FILTER = 'octolize/shipping-extensions/initiated';
     /**
      * @var WPDesk_Plugin_Info .
@@ -49,6 +50,7 @@ class ShippingExtensions implements Hookable
             $this->add_hookable(new PageViewTracker($tracker));
             $this->add_hookable(new WooCommerceSuggestions());
             $this->add_hookable(new BlackFriday2025Promo());
+            $this->add_hookable(new TimedUpdates(array_merge([BlackFriday2025Promo::get_timed_update()], PluginFactory::get_timed_updates())));
         }
         $this->hooks_on_hookable_objects();
     }

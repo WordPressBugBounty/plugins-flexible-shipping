@@ -302,6 +302,14 @@ body.woocommerce_page_octolize-shipping-extensions .oct-shipping-extensions .btn
   background-color: #80f1e0 !important;
   border-color: #80f1e0 !important;
 }
+body.woocommerce_page_octolize-shipping-extensions .oct-shipping-extensions .btn-yellow {
+  background-color: #F4D35E !important;
+  border: 1px solid #F4D35E !important;
+}
+body.woocommerce_page_octolize-shipping-extensions .oct-shipping-extensions .btn-yellow:hover, body.woocommerce_page_octolize-shipping-extensions .oct-shipping-extensions .btn-yellow:active {
+  background-color: #F6DE88 !important;
+  border-color: #F6DE88 !important;
+}
 body.woocommerce_page_octolize-shipping-extensions.rtl .oct-shipping-extensions .oct-shipping-extension-content-wrapper .oct-shipping-extensions-top:after {
   right: calc(100% - 317px);
 }
