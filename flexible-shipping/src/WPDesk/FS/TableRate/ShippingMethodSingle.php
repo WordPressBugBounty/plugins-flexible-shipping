@@ -12,6 +12,8 @@ use FSVendor\WPDesk\FS\TableRate\Logger\NoticeLogger;
 use FSVendor\WPDesk\FS\TableRate\Logger\ShippingMethodLogger;
 use FSVendor\WPDesk\FS\TableRate\Settings\MethodSettingsFactory;
 use WC_Shipping_Method;
+use WPDesk\FS\TableRate\FreeShipping\LffsNoticeTextFormatValidator;
+use WPDesk\FS\TableRate\FreeShipping\NoticeTextSettings;
 use WPDesk\FS\TableRate\Rule\Condition\ConditionsFactory;
 use WPDesk\FS\TableRate\Rule\Cost\RuleAdditionalCostFactory;
 use WPDesk\FS\TableRate\Rule\Cost\RuleCostFieldsFactory;
@@ -40,6 +42,11 @@ class ShippingMethodSingle extends WC_Shipping_Method {
 	 * @var bool
 	 */
 	private $is_html_ads_loaded = false;
+
+	/**
+	 * @var string[]
+	 */
+	private $field_validation_errors = [];
 
 	/**
 	 * ShippingMethodSingle constructor.
@@ -335,6 +342,58 @@ class ShippingMethodSingle extends WC_Shipping_Method {
 		);
 
 		return json_encode( $rules_settings_processor->prepare_settings(), JSON_PRETTY_PRINT );
+	}
+
+	/**
+	 * @param string $key   Field key.
+	 * @param string $value Posted value.
+	 *
+	 * @return string
+	 */
+	public function validate_method_free_shipping_notice_text_field( $key, $value ) {
+		$value = parent::validate_textarea_field( $key, $value );
+
+		if ( ( new LffsNoticeTextFormatValidator() )->is_valid( $value ) ) {
+			return $value;
+		}
+
+		$error_message                         = $this->get_lffs_notice_text_validation_error_message();
+		$this->field_validation_errors[ $key ] = $error_message;
+		$this->add_error( $error_message );
+
+		return $this->get_option( $key, '' );
+	}
+
+	/**
+	 * @param string $key  Field key.
+	 * @param array  $data Field data.
+	 *
+	 * @return string
+	 */
+	public function generate_textarea_html( $key, $data ) {
+		$html = parent::generate_textarea_html( $key, $data );
+
+		if ( NoticeTextSettings::FIELD_NAME !== $key || empty( $this->field_validation_errors[ $key ] ) ) {
+			return $html;
+		}
+
+		return str_replace(
+			'</fieldset>',
+			'<p class="description fs-lffs-notice-text-error-message" style="color:#b32d2e;margin-top:4px;">' . wp_kses_post( $this->field_validation_errors[ $key ] ) . '</p></fieldset>',
+			$html
+		);
+	}
+
+	/**
+	 * @return string
+	 */
+	private function get_lffs_notice_text_validation_error_message(): string {
+		return sprintf(
+			// Translators: code tag opening, code tag closing.
+			__( 'The LFFS notice text contains an invalid placeholder format. Use %1$s%%1$s%2$s to display the amount left for free shipping.', 'flexible-shipping' ),
+			'<code>',
+			'</code>'
+		);
 	}
 
 	/**

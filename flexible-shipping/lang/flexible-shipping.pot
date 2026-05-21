@@ -2,14 +2,14 @@
 # This file is distributed under the same license as the Flexible Shipping plugin.
 msgid ""
 msgstr ""
-"Project-Id-Version: Flexible Shipping 6.7.2\n"
+"Project-Id-Version: Flexible Shipping 6.7.3\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/flexible-shipping\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-05-18T11:47:07+00:00\n"
+"POT-Creation-Date: 2026-05-21T12:55:20+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: flexible-shipping\n"
@@ -27,7 +27,7 @@ msgstr ""
 #: src/WPDesk/FS/TableRate/ShippingMethod/CommonMethodSettings.php:180
 #: src/WPDesk/FS/TableRate/ShippingMethod/Duplicate/DuplicateAction.php:76
 #: src/WPDesk/FS/TableRate/ShippingMethod/Duplicate/DuplicateScript.php:67
-#: src/WPDesk/FS/TableRate/ShippingMethodSingle.php:65
+#: src/WPDesk/FS/TableRate/ShippingMethodSingle.php:72
 #: vendor_prefixed/wpdesk/wp-wpdesk-fs-compatibility/src/PluginCompatibilityChecker.php:94
 msgid "Flexible Shipping"
 msgstr ""
@@ -247,7 +247,7 @@ msgid "Shipping method %s updated."
 msgstr ""
 
 #: classes/table-rate/shipping-method.php:568
-#: src/WPDesk/FS/TableRate/ShippingMethodSingle.php:393
+#: src/WPDesk/FS/TableRate/ShippingMethodSingle.php:452
 msgid "Shipping cost added."
 msgstr ""
 
@@ -1057,13 +1057,14 @@ msgid "No shipping method handled by Flexible Shipping found in the %1$s shippin
 msgstr ""
 
 #. Translators: amount with currency.
-#: src/WPDesk/FS/TableRate/FreeShipping/FreeShippingNoticeGenerator.php:175
+#: src/WPDesk/FS/TableRate/FreeShipping/FreeShippingNoticeGenerator.php:174
+#: src/WPDesk/FS/TableRate/FreeShipping/FreeShippingNoticeGenerator.php:194
 #: src/WPDesk/FS/TableRate/FreeShipping/NoticeTextSettings.php:44
 #, php-format
 msgid "You only need %1$s more to get free shipping!"
 msgstr ""
 
-#: src/WPDesk/FS/TableRate/FreeShipping/FreeShippingNoticeGenerator.php:195
+#: src/WPDesk/FS/TableRate/FreeShipping/FreeShippingNoticeGenerator.php:212
 msgid "Continue shopping"
 msgstr ""
 
@@ -1792,26 +1793,32 @@ msgstr ""
 msgid "Choose whether the shipping cost defined in the rules table should be inclusive or exclusive of tax."
 msgstr ""
 
-#: src/WPDesk/FS/TableRate/ShippingMethodSingle.php:66
+#: src/WPDesk/FS/TableRate/ShippingMethodSingle.php:73
 msgid "A single Flexible Shipping method."
 msgstr ""
 
 #. Translators: docs link.
-#: src/WPDesk/FS/TableRate/ShippingMethodSingle.php:70
+#: src/WPDesk/FS/TableRate/ShippingMethodSingle.php:77
 #, php-format
 msgid "A single Flexible Shipping method. Learn %1$show to configure FS shipping method &rarr;%2$s"
 msgstr ""
 
 #. Translators: documentation link opening tag, closing tag, free shipping threshold amount, zero cost amount.
-#: src/WPDesk/FS/TableRate/ShippingMethodSingle.php:220
+#: src/WPDesk/FS/TableRate/ShippingMethodSingle.php:227
 #, php-format
 msgid "Upewnij się, że zakres od progu darmowej wysyłki wzwyż jest również pokryty odpowiednią regułą w tabeli poniżej, np. KIEDY: Cena jest od %3$s do [puste], koszt wynosi %4$s.<br />%1$sDowiedz się, jak skonfigurować próg darmowej wysyłki w regułach obliczania kosztów →%2$s"
 msgstr ""
 
 #. Translators: documentation link opening tag, closing tag, free shipping threshold amount, zero cost amount.
-#: src/WPDesk/FS/TableRate/ShippingMethodSingle.php:230
+#: src/WPDesk/FS/TableRate/ShippingMethodSingle.php:237
 #, php-format
 msgid "Make sure the range from the free shipping threshold upwards is also covered by the corresponding rule in the table below, e.g. WHEN: Price is from %3$s to [empty], rule cost is %4$s.<br />%1$sLearn how to configure the free shipping threshold in the cost calculation rules →%2$s"
+msgstr ""
+
+#. Translators: code tag opening, code tag closing.
+#: src/WPDesk/FS/TableRate/ShippingMethodSingle.php:393
+#, php-format
+msgid "The LFFS notice text contains an invalid placeholder format. Use %1$s%%1$s%2$s to display the amount left for free shipping."
 msgstr ""
 
 #: src/WPDesk/FS/TableRate/ShippingMethodsIntegration/OrderMetaData.php:38

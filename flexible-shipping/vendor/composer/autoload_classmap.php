@@ -566,6 +566,7 @@ return array(
     'WPDesk\\FS\\TableRate\\FreeShipping\\FreeShippingNoticeData' => $baseDir . '/src/WPDesk/FS/TableRate/FreeShipping/FreeShippingNoticeData.php',
     'WPDesk\\FS\\TableRate\\FreeShipping\\FreeShippingNoticeGenerator' => $baseDir . '/src/WPDesk/FS/TableRate/FreeShipping/FreeShippingNoticeGenerator.php',
     'WPDesk\\FS\\TableRate\\FreeShipping\\FreeShippingNoticeRenderer' => $baseDir . '/src/WPDesk/FS/TableRate/FreeShipping/FreeShippingNoticeRenderer.php',
+    'WPDesk\\FS\\TableRate\\FreeShipping\\LffsNoticeTextFormatValidator' => $baseDir . '/src/WPDesk/FS/TableRate/FreeShipping/LffsNoticeTextFormatValidator.php',
     'WPDesk\\FS\\TableRate\\FreeShipping\\NoticeTextSettings' => $baseDir . '/src/WPDesk/FS/TableRate/FreeShipping/NoticeTextSettings.php',
     'WPDesk\\FS\\TableRate\\FreeShipping\\ProgressBarSettings' => $baseDir . '/src/WPDesk/FS/TableRate/FreeShipping/ProgressBarSettings.php',
     'WPDesk\\FS\\TableRate\\FreeShipping\\Tracker' => $baseDir . '/src/WPDesk/FS/TableRate/FreeShipping/Tracker.php',

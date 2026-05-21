@@ -581,6 +581,7 @@ class ComposerStaticInitae3f9822c8831036beb147d3aa86c7c0
         'WPDesk\\FS\\TableRate\\FreeShipping\\FreeShippingNoticeData' => __DIR__ . '/../..' . '/src/WPDesk/FS/TableRate/FreeShipping/FreeShippingNoticeData.php',
         'WPDesk\\FS\\TableRate\\FreeShipping\\FreeShippingNoticeGenerator' => __DIR__ . '/../..' . '/src/WPDesk/FS/TableRate/FreeShipping/FreeShippingNoticeGenerator.php',
         'WPDesk\\FS\\TableRate\\FreeShipping\\FreeShippingNoticeRenderer' => __DIR__ . '/../..' . '/src/WPDesk/FS/TableRate/FreeShipping/FreeShippingNoticeRenderer.php',
+        'WPDesk\\FS\\TableRate\\FreeShipping\\LffsNoticeTextFormatValidator' => __DIR__ . '/../..' . '/src/WPDesk/FS/TableRate/FreeShipping/LffsNoticeTextFormatValidator.php',
         'WPDesk\\FS\\TableRate\\FreeShipping\\NoticeTextSettings' => __DIR__ . '/../..' . '/src/WPDesk/FS/TableRate/FreeShipping/NoticeTextSettings.php',
         'WPDesk\\FS\\TableRate\\FreeShipping\\ProgressBarSettings' => __DIR__ . '/../..' . '/src/WPDesk/FS/TableRate/FreeShipping/ProgressBarSettings.php',
         'WPDesk\\FS\\TableRate\\FreeShipping\\Tracker' => __DIR__ . '/../..' . '/src/WPDesk/FS/TableRate/FreeShipping/Tracker.php',
