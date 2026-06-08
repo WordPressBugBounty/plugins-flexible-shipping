@@ -14,6 +14,7 @@ use FSVendor\WPDesk\FS\TableRate\Settings\MethodSettingsFactory;
 use WC_Shipping_Method;
 use WPDesk\FS\TableRate\FreeShipping\LffsNoticeTextFormatValidator;
 use WPDesk\FS\TableRate\FreeShipping\NoticeTextSettings;
+use WPDesk\FS\TableRate\FreeShipping\Tracker\ThresholdAlertTracker;
 use WPDesk\FS\TableRate\Rule\Condition\ConditionsFactory;
 use WPDesk\FS\TableRate\Rule\Cost\RuleAdditionalCostFactory;
 use WPDesk\FS\TableRate\Rule\Cost\RuleCostFieldsFactory;
@@ -170,6 +171,8 @@ class ShippingMethodSingle extends WC_Shipping_Method {
 		];
 
 		$data = wp_parse_args( $data, $defaults );
+
+		do_action( ThresholdAlertTracker::DISPLAYED_ACTION );
 
 		ob_start();
 		include __DIR__ . '/views/html-price-with-validation-error.php';

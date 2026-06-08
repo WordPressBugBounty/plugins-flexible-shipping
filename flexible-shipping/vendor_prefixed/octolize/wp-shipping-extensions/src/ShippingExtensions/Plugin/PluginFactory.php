@@ -12,6 +12,9 @@ class PluginFactory
     const CATEGORY_CUSTOMIZABLE_RATES = 'customizable_rates';
     const CATEGORY_SHIPPING_LABELS = 'shipping_labels';
     const GROUP_UPS = 'ups';
+    private const SHIPPING_ANALYTICS_TIMED_UPDATE = 'shipping_analytics_pro_early_access';
+    private const SHIPPING_ANALYTICS_VISIBILITY_START_DATE = '2026-05-17';
+    private const SHIPPING_ANALYTICS_VISIBILITY_END_DATE = '2026-06-17';
     /**
      * @return Plugin[]
      */
@@ -22,8 +25,8 @@ class PluginFactory
         $plugin = new Plugin(__('Flexible Shipping PRO', 'flexible-shipping'), __('The best and the most powerful Table Rate shipping plugin for WooCommerce. Define the shipping rules based on numerous conditions and configure even the most complex shipping scenarios with ease.', 'flexible-shipping'), 'flexible-shipping-pro.svg', 'flexible-shipping-pro/flexible-shipping-pro.php', $categories[self::CATEGORY_CUSTOMIZABLE_RATES], ' https://octol.io/fs-extensions');
         $plugin->add_url('https://octol.io/fs-extensions-pl', 'pl_PL');
         $plugins[] = $plugin;
-        $shipping_analytics_visibility_period = new DateRange('2026-05-17', '2026-06-17');
-        $plugins[] = new Plugin(__('Shipping Analytics PRO', 'flexible-shipping'), __('Get actionable recommendations based on real checkout issues, missing rates, abandoned carts, and shipping configuration gaps. Be the first to try it out!', 'flexible-shipping'), 'flexible-shipping-pro.svg', 'shipping-analytics-pro', $categories[self::CATEGORY_CUSTOMIZABLE_RATES], 'https://shipping-optimization.octolize.com/#form', null, __('Get early access →', 'flexible-shipping'), 'btn-yellow', $shipping_analytics_visibility_period, new TimedUpdate('shipping_analytics_pro_early_access', $shipping_analytics_visibility_period));
+        $shipping_analytics_visibility_period = self::get_shipping_analytics_visibility_period();
+        $plugins[] = new Plugin(__('Shipping Analytics PRO', 'flexible-shipping'), __('Get actionable recommendations based on real checkout issues, missing rates, abandoned carts, and shipping configuration gaps. Be the first to try it out!', 'flexible-shipping'), 'flexible-shipping-pro.svg', 'shipping-analytics-pro', $categories[self::CATEGORY_CUSTOMIZABLE_RATES], 'https://shipping-optimization.octolize.com/#form', null, __('Get early access →', 'flexible-shipping'), 'btn-yellow', $shipping_analytics_visibility_period, new TimedUpdate(self::SHIPPING_ANALYTICS_TIMED_UPDATE, $shipping_analytics_visibility_period));
         $plugin = new Plugin(__('All Plugins Bundle', 'flexible-shipping'), __('Grab a pack of all Octolize plugins as a cut-price tailor-made limited offer for developers, agencies and freelancers. Move the WooCommerce shipping to a whole new level. No strings attached, each plugin\'s 25‑sites subscription included.', 'flexible-shipping'), 'all-plugins-bundle-avatar-icon.svg', 'all-plugins-bundle', $categories[self::CATEGORY_BUNDLES], 'https://octol.io/all-plugins-bundle-extensions');
         $plugin->add_url('https://octol.io/all-plugins-bundle-extensions-pl', 'pl_PL');
         $plugins[] = $plugin;
@@ -129,13 +132,10 @@ class PluginFactory
      */
     public static function get_timed_updates(): array
     {
-        $timed_updates = [];
-        foreach (self::get_plugins() as $plugin) {
-            $timed_update = $plugin->get_timed_update();
-            if ($timed_update !== null) {
-                $timed_updates[] = $timed_update;
-            }
-        }
-        return $timed_updates;
+        return [new TimedUpdate(self::SHIPPING_ANALYTICS_TIMED_UPDATE, self::get_shipping_analytics_visibility_period())];
+    }
+    private static function get_shipping_analytics_visibility_period(): DateRange
+    {
+        return new DateRange(self::SHIPPING_ANALYTICS_VISIBILITY_START_DATE, self::SHIPPING_ANALYTICS_VISIBILITY_END_DATE);
     }
 }

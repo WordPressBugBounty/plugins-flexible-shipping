@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitae3f9822c8831036beb147d3aa86c7c0
+class ComposerStaticInit35d98623612c38bc9548059b17028a31
 {
     public static $prefixLengthsPsr4 = array (
         'W' =>
@@ -505,6 +505,7 @@ class ComposerStaticInitae3f9822c8831036beb147d3aa86c7c0
         'FSVendor\\WPDesk_Tracker_Sender' => __DIR__ . '/../..' . '/vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/sender/class-wpdesk-tracker-sender.php',
         'FSVendor\\WPDesk_Tracker_Sender_Exception_WpError' => __DIR__ . '/../..' . '/vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/sender/Exception/class-wpdesk-tracker-sender-exception-wperror.php',
         'FSVendor\\WPDesk_Tracker_Sender_Logged' => __DIR__ . '/../..' . '/vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/sender/class-wpdesk-tracker-sender-logged.php',
+        'FSVendor\\WPDesk_Tracker_Sender_Resolver' => __DIR__ . '/../..' . '/vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/sender/class-wpdesk-tracker-sender-resolver.php',
         'FSVendor\\WPDesk_Tracker_Sender_Wordpress_To_WPDesk' => __DIR__ . '/../..' . '/vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/sender/class-wpdesk-tracker-sender-wordpress-to-wpdesk.php',
         'FSVendor\\WPDesk_Translable' => __DIR__ . '/../..' . '/vendor_prefixed/wpdesk/wp-builder/src/Plugin/WithoutNamespace/Translable.php',
         'FSVendor\\WPDesk_Translatable' => __DIR__ . '/../..' . '/vendor_prefixed/wpdesk/wp-builder/src/Plugin/WithoutNamespace/Translatable.php',
@@ -585,6 +586,7 @@ class ComposerStaticInitae3f9822c8831036beb147d3aa86c7c0
         'WPDesk\\FS\\TableRate\\FreeShipping\\NoticeTextSettings' => __DIR__ . '/../..' . '/src/WPDesk/FS/TableRate/FreeShipping/NoticeTextSettings.php',
         'WPDesk\\FS\\TableRate\\FreeShipping\\ProgressBarSettings' => __DIR__ . '/../..' . '/src/WPDesk/FS/TableRate/FreeShipping/ProgressBarSettings.php',
         'WPDesk\\FS\\TableRate\\FreeShipping\\Tracker' => __DIR__ . '/../..' . '/src/WPDesk/FS/TableRate/FreeShipping/Tracker.php',
+        'WPDesk\\FS\\TableRate\\FreeShipping\\Tracker\\ThresholdAlertTracker' => __DIR__ . '/../..' . '/src/WPDesk/FS/TableRate/FreeShipping/Tracker/ThresholdAlertTracker.php',
         'WPDesk\\FS\\TableRate\\ImporterExporter\\Exporter' => __DIR__ . '/../..' . '/src/WPDesk/FS/TableRate/ImporterExporter/Exporter.php',
         'WPDesk\\FS\\TableRate\\ImporterExporter\\ExporterData' => __DIR__ . '/../..' . '/src/WPDesk/FS/TableRate/ImporterExporter/ExporterData.php',
         'WPDesk\\FS\\TableRate\\ImporterExporter\\Exporter\\JSON' => __DIR__ . '/../..' . '/src/WPDesk/FS/TableRate/ImporterExporter/Exporter/JSON.php',
@@ -684,6 +686,7 @@ class ComposerStaticInitae3f9822c8831036beb147d3aa86c7c0
         'WPDesk\\FS\\TableRate\\ShippingMethod\\SingleMethodSettings' => __DIR__ . '/../..' . '/src/WPDesk/FS/TableRate/ShippingMethod/SingleMethodSettings.php',
         'WPDesk\\FS\\TableRate\\ShippingMethod\\Timestamps\\MethodTimestamps' => __DIR__ . '/../..' . '/src/WPDesk/FS/TableRate/ShippingMethod/Timestamps/MethodTimestamps.php',
         'WPDesk\\FS\\TableRate\\ShippingMethod\\Timestamps\\TrackerData' => __DIR__ . '/../..' . '/src/WPDesk/FS/TableRate/ShippingMethod/Timestamps/TrackerData.php',
+        'WPDesk\\FS\\TableRate\\ShippingMethod\\Tracker\\MethodLogoTracker' => __DIR__ . '/../..' . '/src/WPDesk/FS/TableRate/ShippingMethod/Tracker/MethodLogoTracker.php',
         'WPDesk\\FS\\TableRate\\ShippingMethodsIntegration\\Integration' => __DIR__ . '/../..' . '/src/WPDesk/FS/TableRate/ShippingMethodsIntegration/Integration.php',
         'WPDesk\\FS\\TableRate\\ShippingMethodsIntegration\\OrderMetaData' => __DIR__ . '/../..' . '/src/WPDesk/FS/TableRate/ShippingMethodsIntegration/OrderMetaData.php',
         'WPDesk\\FS\\TableRate\\ShippingMethodsIntegration\\SettingsFields' => __DIR__ . '/../..' . '/src/WPDesk/FS/TableRate/ShippingMethodsIntegration/SettingsFields.php',
@@ -714,9 +717,9 @@ class ComposerStaticInitae3f9822c8831036beb147d3aa86c7c0
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitae3f9822c8831036beb147d3aa86c7c0::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitae3f9822c8831036beb147d3aa86c7c0::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInitae3f9822c8831036beb147d3aa86c7c0::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit35d98623612c38bc9548059b17028a31::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit35d98623612c38bc9548059b17028a31::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit35d98623612c38bc9548059b17028a31::$classMap;
 
         }, null, ClassLoader::class);
     }
