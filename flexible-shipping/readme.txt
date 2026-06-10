@@ -4,7 +4,7 @@ Donate link: https://octol.io/fs-repo-up
 Tags: WooCommerce shipping, weight based shipping, Table Rate Shipping, conditional shipping, advanced shipping
 Requires at least: 5.8
 Tested up to: 7.0
-Stable tag: 6.7.4
+Stable tag: 6.8.0
 Requires PHP: 7.4
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -309,6 +309,12 @@ If you encounter any issues with the Free version, you can post a topic on the [
 If you are upgrading from the old Flexible Shipping version (1.3.2, woo-flexible-shipping) make sure to completely delete the old version first. If you install the new version without deleting the old one it may break your WordPress installation.
 
 == Changelog ==
+
+= 6.8.0 - 2026-06-10 =
+* Updated Shipping Extensions tab
+
+= 6.7.5 - 2026-06-08 =
+* Added support for WooCommerce 10.9
 
 = 6.7.4 - 2026-06-08 =
 * Added tracking for shipping method logo usage and free shipping threshold alert display.

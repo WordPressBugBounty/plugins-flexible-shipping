@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit35d98623612c38bc9548059b17028a31
+class ComposerStaticInitb7f190e9b4ef3d7f577e95970b53187c
 {
     public static $prefixLengthsPsr4 = array (
         'W' =>
@@ -175,7 +175,6 @@ class ComposerStaticInit35d98623612c38bc9548059b17028a31
         'FSVendor\\Octolize\\Onboarding\\PluginUpgrade\\PluginUpgradeWatcher' => __DIR__ . '/../..' . '/vendor_prefixed/octolize/wp-onboarding/src/Onboarding/PluginUpgrade/PluginUpgradeWatcher.php',
         'FSVendor\\Octolize\\ShippingExtensions\\AdminPage' => __DIR__ . '/../..' . '/vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/AdminPage.php',
         'FSVendor\\Octolize\\ShippingExtensions\\Assets' => __DIR__ . '/../..' . '/vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/Assets.php',
-        'FSVendor\\Octolize\\ShippingExtensions\\BlackFriday2025Promo' => __DIR__ . '/../..' . '/vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/BlackFriday2025Promo.php',
         'FSVendor\\Octolize\\ShippingExtensions\\DateRange' => __DIR__ . '/../..' . '/vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/DateRange.php',
         'FSVendor\\Octolize\\ShippingExtensions\\Page' => __DIR__ . '/../..' . '/vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/Page.php',
         'FSVendor\\Octolize\\ShippingExtensions\\PageViewTracker' => __DIR__ . '/../..' . '/vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/PageViewTracker.php',
@@ -183,6 +182,7 @@ class ComposerStaticInit35d98623612c38bc9548059b17028a31
         'FSVendor\\Octolize\\ShippingExtensions\\Plugin\\Plugin' => __DIR__ . '/../..' . '/vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/Plugin/Plugin.php',
         'FSVendor\\Octolize\\ShippingExtensions\\Plugin\\PluginFactory' => __DIR__ . '/../..' . '/vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/Plugin/PluginFactory.php',
         'FSVendor\\Octolize\\ShippingExtensions\\Plugin\\PluginSorter' => __DIR__ . '/../..' . '/vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/Plugin/PluginSorter.php',
+        'FSVendor\\Octolize\\ShippingExtensions\\Promo\\Summer2026Promo' => __DIR__ . '/../..' . '/vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/Promo/Summer2026Promo.php',
         'FSVendor\\Octolize\\ShippingExtensions\\ShippingExtensions' => __DIR__ . '/../..' . '/vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/ShippingExtensions.php',
         'FSVendor\\Octolize\\ShippingExtensions\\TimedUpdate' => __DIR__ . '/../..' . '/vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/TimedUpdate.php',
         'FSVendor\\Octolize\\ShippingExtensions\\TimedUpdates' => __DIR__ . '/../..' . '/vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/TimedUpdates.php',
@@ -717,9 +717,9 @@ class ComposerStaticInit35d98623612c38bc9548059b17028a31
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit35d98623612c38bc9548059b17028a31::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit35d98623612c38bc9548059b17028a31::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit35d98623612c38bc9548059b17028a31::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitb7f190e9b4ef3d7f577e95970b53187c::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitb7f190e9b4ef3d7f577e95970b53187c::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInitb7f190e9b4ef3d7f577e95970b53187c::$classMap;
 
         }, null, ClassLoader::class);
     }
