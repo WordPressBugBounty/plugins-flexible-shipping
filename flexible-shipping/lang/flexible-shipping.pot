@@ -2,14 +2,14 @@
 # This file is distributed under the same license as the Flexible Shipping plugin.
 msgid ""
 msgstr ""
-"Project-Id-Version: Flexible Shipping 6.9.1\n"
+"Project-Id-Version: Flexible Shipping 6.10.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/flexible-shipping\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-07-20T23:09:06+00:00\n"
+"POT-Creation-Date: 2026-07-23T12:27:37+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: flexible-shipping\n"
@@ -1495,6 +1495,36 @@ msgstr ""
 
 #: src/WPDesk/FS/TableRate/Rule/SpecialAction/SpecialActionFieldsFactory.php:65
 msgid "special action"
+msgstr ""
+
+#: src/WPDesk/FS/TableRate/RulesSettingsField.php:130
+msgid "Let AI build your rules table"
+msgstr ""
+
+#: src/WPDesk/FS/TableRate/RulesSettingsField.php:132
+msgid "Get Flexible Shipping PRO →"
+msgstr ""
+
+#. Translators: 1: opening content tag, 2: closing content tag, 3: opening line break and strong tags, 4: closing strong tag, 5: opening list tag, 6: closing list tag, 7: opening list item tag, 8: closing list item tag, 9: opening strong tag, 10: closing strong tag.
+#: src/WPDesk/FS/TableRate/RulesSettingsField.php:159
+#, php-format
+msgid ""
+"%1$sThe AI Shipping Assistant is included with an active Flexible Shipping PRO subscription. Describe your shipping scenario in plain language, and it generates a ready-to-use rules table for you.\n"
+"%3$sWith an active subscription, you get:%4$s\n"
+"%5$s\n"
+"%7$s%9$sShipping configuration%10$s in under 60 seconds thanks to AI%8$s\n"
+"%7$s%9$sAutomatic plugin updates%10$s for as long as your subscription is active%8$s\n"
+"%7$s%9$sHuman 1-on-1 support%10$s, whenever you need it%8$s\n"
+"%6$s\n"
+"%2$s"
+msgstr ""
+
+#: src/WPDesk/FS/TableRate/RulesSettingsField.php:184
+msgid "Maybe later"
+msgstr ""
+
+#: src/WPDesk/FS/TableRate/RulesSettingsField.php:185
+msgid "30-day money-back guarantee · Cancel anytime"
 msgstr ""
 
 #: src/WPDesk/FS/TableRate/ShippingMethod/CommonMethodSettings.php:41

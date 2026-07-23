@@ -124,7 +124,7 @@ class Flexible_Shipping_Plugin extends AbstractPlugin implements HookableCollect
 	 *
 	 * @var string
 	 */
-	private $scripts_version = '2';
+	private $scripts_version = '4';
 
 	/**
 	 * Admin notices.
