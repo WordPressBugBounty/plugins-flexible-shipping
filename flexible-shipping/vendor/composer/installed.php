@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'wpdesk/flexible-shipping',
-        'pretty_version' => '6.10.0',
-        'version' => '6.10.0.0',
-        'reference' => '4065201623d7607e94d609eaa2116fed9465a7bf',
+        'pretty_version' => '6.11.0',
+        'version' => '6.11.0.0',
+        'reference' => 'af937f747f83706f305ac4fdb2edbd3d5c87c666',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -11,9 +11,9 @@
     ),
     'versions' => array(
         'wpdesk/flexible-shipping' => array(
-            'pretty_version' => '6.10.0',
-            'version' => '6.10.0.0',
-            'reference' => '4065201623d7607e94d609eaa2116fed9465a7bf',
+            'pretty_version' => '6.11.0',
+            'version' => '6.11.0.0',
+            'reference' => 'af937f747f83706f305ac4fdb2edbd3d5c87c666',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

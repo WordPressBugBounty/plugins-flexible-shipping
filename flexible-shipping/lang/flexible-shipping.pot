@@ -2,14 +2,14 @@
 # This file is distributed under the same license as the Flexible Shipping plugin.
 msgid ""
 msgstr ""
-"Project-Id-Version: Flexible Shipping 6.10.0\n"
+"Project-Id-Version: Flexible Shipping 6.11.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/flexible-shipping\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-07-23T12:27:37+00:00\n"
+"POT-Creation-Date: 2026-08-10T15:34:39+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: flexible-shipping\n"
@@ -25,7 +25,7 @@ msgstr ""
 #: classes/table-rate/settings/flexible-shipping.php:32
 #: classes/table-rate/shipping-method.php:97
 #: src/WPDesk/FS/TableRate/ShippingMethod/CommonMethodSettings.php:180
-#: src/WPDesk/FS/TableRate/ShippingMethod/Duplicate/DuplicateAction.php:76
+#: src/WPDesk/FS/TableRate/ShippingMethod/Duplicate/DuplicateAction.php:83
 #: src/WPDesk/FS/TableRate/ShippingMethod/Duplicate/DuplicateScript.php:67
 #: src/WPDesk/FS/TableRate/ShippingMethodSingle.php:73
 #: vendor_prefixed/wpdesk/wp-wpdesk-fs-compatibility/src/PluginCompatibilityChecker.php:94
@@ -70,7 +70,7 @@ msgid "Settings"
 msgstr ""
 
 #: classes/class-flexible-shipping-plugin.php:982
-msgid "Buy PRO"
+msgid "Buy Flexible Shipping PRO"
 msgstr ""
 
 #. Translators: link.
@@ -799,13 +799,17 @@ msgid "Proceed to adding the rules"
 msgstr ""
 
 #: src/WPDesk/FS/Plugin/PluginLinks.php:25
+msgid "Rate Flexible Shipping"
+msgstr ""
+
+#: src/WPDesk/FS/Plugin/PluginLinks.php:26
 #: vendor_prefixed/wpdesk/wp-builder/src/Plugin/AbstractPlugin.php:184
 msgid "Docs"
 msgstr ""
 
-#: src/WPDesk/FS/Plugin/PluginLinks.php:26
+#: src/WPDesk/FS/Plugin/PluginLinks.php:27
 #: vendor_prefixed/wpdesk/wp-builder/src/Plugin/AbstractPlugin.php:181
-#: assets-src/rules-settings/js/components/rules-settings.js:583
+#: assets-src/rules-settings/js/components/rules-settings.js:573
 #: assets/js/rules-settings.js:137
 msgid "Support"
 msgstr ""
@@ -1703,7 +1707,7 @@ msgstr ""
 msgid "Shipping method duplication error. Please try again later."
 msgstr ""
 
-#: src/WPDesk/FS/TableRate/ShippingMethod/Duplicate/DuplicateAction.php:79
+#: src/WPDesk/FS/TableRate/ShippingMethod/Duplicate/DuplicateAction.php:86
 msgid "(Copy)"
 msgstr ""
 
@@ -1718,7 +1722,7 @@ msgid "%1$s%2$s%3$s shipping method duplication error. Please try again later."
 msgstr ""
 
 #: src/WPDesk/FS/TableRate/ShippingMethod/Duplicate/DuplicateScript.php:68
-#: assets-src/rules-settings/js/components/rules-settings.js:531
+#: assets-src/rules-settings/js/components/rules-settings.js:525
 #: assets/js/rules-settings.js:137
 msgid "Duplicate"
 msgstr ""
@@ -3439,66 +3443,77 @@ msgstr ""
 msgid "Add rule"
 msgstr ""
 
-#: assets-src/rules-settings/js/components/rules-settings.js:511
+#: assets-src/rules-settings/js/components/rules-settings.js:506
 #: assets/js/rules-settings.js:137
 msgid "Selected rules:"
 msgstr ""
 
-#: assets-src/rules-settings/js/components/rules-settings.js:521
+#: assets-src/rules-settings/js/components/rules-settings.js:515
 #: assets/js/rules-settings.js:137
 msgid "Delete"
 msgstr ""
 
-#: assets-src/rules-settings/js/components/rules-settings.js:542
+#: assets-src/rules-settings/js/components/rules-settings.js:534
 #: assets/js/rules-settings.js:137
 msgid "Rules table"
 msgstr ""
 
-#: assets-src/rules-settings/js/components/rules-settings.js:547
+#: assets-src/rules-settings/js/components/rules-settings.js:539
 #: assets/js/rules-settings.js:137
 msgid "Paste JSON from clipboard"
 msgstr ""
 
-#: assets-src/rules-settings/js/components/rules-settings.js:552
+#: assets-src/rules-settings/js/components/rules-settings.js:544
 #: assets/js/rules-settings.js:137
 msgid "Import JSON file"
 msgstr ""
 
-#: assets-src/rules-settings/js/components/rules-settings.js:557
+#: assets-src/rules-settings/js/components/rules-settings.js:549
 #: assets/js/rules-settings.js:137
 msgid "Save JSON file"
 msgstr ""
 
-#: assets-src/rules-settings/js/components/rules-settings.js:561
+#: assets-src/rules-settings/js/components/rules-settings.js:553
 #: assets/js/rules-settings.js:137
 msgid "Use ready-made scenarios"
 msgstr ""
 
-#: assets-src/rules-settings/js/components/rules-settings.js:602
-#: assets-src/rules-settings/js/components/rules-settings.js:613
+#: assets-src/rules-settings/js/components/rules-settings.js:590
+#: assets-src/rules-settings/js/components/rules-settings.js:599
 #: assets/js/rules-settings.js:137
 msgid "Save time with AI ✦"
 msgstr ""
 
-#: assets-src/rules-settings/js/components/rules-settings.js:663
-#: assets-src/rules-settings/js/components/rules-settings.js:672
+#: assets-src/rules-settings/js/components/rules-settings.js:648
+#: assets-src/rules-settings/js/components/rules-settings.js:657
 #: assets/js/rules-settings.js:137
 msgid "PRO Features"
 msgstr ""
 
-#: assets-src/rules-settings/js/components/rules-settings.js:666
+#: assets-src/rules-settings/js/components/rules-settings.js:651
 #: assets/js/rules-settings.js:137
 msgid "Tick this checkbox to display the features and shipping cost calculation conditions coming with the plugin's PRO version."
 msgstr ""
 
-#: assets-src/rules-settings/js/components/rules-settings.js:678
+#: assets-src/rules-settings/js/components/rules-settings.js:663
 #: assets/js/rules-settings.js:137
 msgid "Show the options available in the PRO version."
 msgstr ""
 
-#: assets-src/rules-settings/js/components/rules-settings.js:682
+#: assets-src/rules-settings/js/components/rules-settings.js:667
 #: assets/js/rules-settings.js:137
 msgid "Learn more about PRO version →"
+msgstr ""
+
+#: assets-src/rules-settings/js/components/single-additional-cost.jsx:62
+#: assets/js/rules-settings.js:137
+msgid "Delete additional cost"
+msgstr ""
+
+#: assets-src/rules-settings/js/components/single-additional-cost.jsx:63
+#: assets-src/rules-settings/js/components/single-rule-costs.jsx:110
+#: assets/js/rules-settings.js:137
+msgid "Add additional cost"
 msgstr ""
 
 #: assets-src/rules-settings/js/components/single-condition.js:245
@@ -3509,6 +3524,16 @@ msgstr ""
 #: assets-src/rules-settings/js/components/single-condition.js:247
 #: assets/js/rules-settings.js:137
 msgid "When"
+msgstr ""
+
+#: assets-src/rules-settings/js/components/single-condition.js:257
+#: assets/js/rules-settings.js:137
+msgid "Delete condition"
+msgstr ""
+
+#: assets-src/rules-settings/js/components/single-condition.js:258
+#: assets/js/rules-settings.js:137
+msgid "Add condition"
 msgstr ""
 
 #: assets-src/rules-settings/js/components/validate_rules_table_config.js:15

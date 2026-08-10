@@ -23,7 +23,7 @@
             "php": "7.4"
         },
         "gitlab-domains": [
-            "gitlab.wpdesk.dev"
+            "gitlab.octolize.dev"
         ],
         "allow-plugins": {
             "cweagans/composer-patches": true,
@@ -121,13 +121,13 @@
     "repositories": {
         "octolize": {
             "type": "composer",
-            "url": "https://gitlab.wpdesk.dev/api/v4/group/wpdesk/-/packages/composer/"
+            "url": "https://gitlab.octolize.dev/api/v4/group/wpdesk/-/packages/composer/"
         },
         "wpdesk": {
             "type": "composer",
-            "url": "https://gitlab.wpdesk.dev/api/v4/group/wpdesk/-/packages/composer/"
+            "url": "https://gitlab.octolize.dev/api/v4/group/wpdesk/-/packages/composer/"
         }
     },
-    "version": "6.10.0",
+    "version": "6.11.0",
     "type": "wordpress-plugin"
 }
