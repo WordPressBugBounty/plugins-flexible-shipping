@@ -3,8 +3,8 @@ Contributors: octolize,grola,sebastianpisula
 Donate link: https://octol.io/fs-repo-up
 Tags: WooCommerce shipping, weight based shipping, Table Rate Shipping, conditional shipping, advanced shipping
 Requires at least: 5.8
-Tested up to: 7.0
-Stable tag: 6.11.0
+Tested up to: 7.1
+Stable tag: 6.12.0
 Requires PHP: 7.4
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -311,12 +311,8 @@ If you are upgrading from the old Flexible Shipping version (1.3.2, woo-flexible
 
 == Changelog ==
 
-= 6.11.0 - 2026-08-10 =
-* Updated the Flexible Shipping PRO link and added a five-star rating link to the Plugins screen
-* Updated shipping extensions tab
-* Fixed duplicating shipping methods
-* Fixed visual issues and unavailable additional cost options appearing in the shipping cost calculation rules table
-* Fixed shipping method logo not being displayed when the method description was empty
-* Fixed shipping method description styling and logo placement in the block checkout
+= 6.12.0 - 2026-08-17 =
+* Changed the Flexible Shipping Info tab to Flexible Shipping.
+* Added support for WordPress 7.1.
 
 For older changelog entries, see the [changelog.txt file](https://plugins.svn.wordpress.org/flexible-shipping/trunk/changelog.txt).

@@ -4,6 +4,14 @@
 
 For the latest changes, see the Changelog section in the [readme.txt file](https://plugins.svn.wordpress.org/flexible-shipping/trunk/readme.txt).
 
+= 6.11.0 - 2026-08-10 =
+* Updated the Flexible Shipping PRO link and added a five-star rating link to the Plugins screen
+* Updated shipping extensions tab
+* Fixed duplicating shipping methods
+* Fixed visual issues and unavailable additional cost options appearing in the shipping cost calculation rules table
+* Fixed shipping method logo not being displayed when the method description was empty
+* Fixed shipping method description styling and logo placement in the block checkout
+
 = 6.10.0 - 2026-07-23 =
 * Replaced the Support button below the rules table with an AI Assistant button and a Flexible Shipping PRO subscription popup.
 * Aligned the Flexible Shipping PRO subscription popup with the approved design.
