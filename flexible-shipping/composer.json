@@ -127,6 +127,6 @@
             "url": "https://gitlab.octolize.dev/api/v4/group/wpdesk/-/packages/composer/"
         }
     },
-    "version": "6.12.0",
+    "version": "6.12.1",
     "type": "wordpress-plugin"
 }

@@ -4,6 +4,11 @@
 
 For the latest changes, see the Changelog section in the [readme.txt file](https://plugins.svn.wordpress.org/flexible-shipping/trunk/readme.txt).
 
+= 6.12.0 - 2026-08-17 =
+
+* Changed the Flexible Shipping Info tab to Flexible Shipping.
+* Added support for WordPress 7.1.
+
 = 6.11.0 - 2026-08-10 =
 * Updated the Flexible Shipping PRO link and added a five-star rating link to the Plugins screen
 * Updated shipping extensions tab
