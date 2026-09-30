@@ -1,5 +1,8 @@
 === Flexible Shipping Changelog ===
 
+= 6.13.1 - 2026-09-30 =
+* Updates to Flexible Shipping Info tab in Settings
+
 == Archived Changelog Entries ==
 
 For the latest changes, see the Changelog section in the [readme.txt file](https://plugins.svn.wordpress.org/flexible-shipping/trunk/readme.txt).
