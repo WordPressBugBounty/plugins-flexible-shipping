@@ -4,7 +4,7 @@ Donate link: https://octol.io/fs-repo-up
 Tags: WooCommerce shipping, weight based shipping, Table Rate Shipping, conditional shipping, advanced shipping
 Requires at least: 5.8
 Tested up to: 7.1
-Stable tag: 6.13.2
+Stable tag: 6.13.3
 Requires PHP: 7.4
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -311,11 +311,7 @@ If you are upgrading from the old Flexible Shipping version (1.3.2, woo-flexible
 
 == Changelog ==
 
-= 6.13.2 - 2026-10-12 =
-* Fixed repeated label download attempts after running subsequent bulk actions on the WooCommerce orders screen.
-
-= 6.13.0 - 2026-09-28 =
-* Added support for WooCommerce 11.2
-* Replaced the Flexible Shipping PRO upsell box in shipping method settings.
+= 6.13.3 - 2026-10-13 =
+* Improved the contrast of the Flexible Shipping PRO purchase link on the Plugins screen.
 
 For older changelog entries, see the [changelog.txt file](https://plugins.svn.wordpress.org/flexible-shipping/trunk/changelog.txt).

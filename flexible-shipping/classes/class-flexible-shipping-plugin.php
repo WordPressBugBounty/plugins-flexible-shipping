@@ -963,7 +963,7 @@ class Flexible_Shipping_Plugin extends AbstractPlugin implements HookableCollect
 
 		if ( ! defined( 'FLEXIBLE_SHIPPING_PRO_VERSION' )  ) {
 			$pro_link     = get_locale() === 'pl_PL' ? 'https://octol.io/fs-upgrade-pl' : 'https://octol.io/fs-upgrade';
-			$plugin_links[] = '<a href="' . esc_url( $pro_link ) . '" target="_blank" style="color:#00e3c0;font-weight:bold;">' . __(
+			$plugin_links[] = '<a href="' . esc_url( $pro_link ) . '" target="_blank" style="color:#5e51a6;font-weight:bold;">' . __(
 					'Buy Flexible Shipping PRO',
 					'flexible-shipping'
 				) . '</a>';
