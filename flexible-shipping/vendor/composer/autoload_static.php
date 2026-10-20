@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit5a4c49ffb5cc873111dbb5efc69086ae
+class ComposerStaticInit2dde00f4d2f07c77b63199db3b20a865
 {
     public static $prefixLengthsPsr4 = array (
         'W' =>
@@ -568,6 +568,7 @@ class ComposerStaticInit5a4c49ffb5cc873111dbb5efc69086ae
         'WPDesk\\FS\\Shipment\\BulkAction\\HandleActionStrategyInterface' => __DIR__ . '/../..' . '/src/WPDesk/FS/Shipment/BulkAction/HandleActionStrategyInterface.php',
         'WPDesk\\FS\\Shipment\\DispatchLabelFile' => __DIR__ . '/../..' . '/src/WPDesk/FS/Shipment/DispatchLabelFile.php',
         'WPDesk\\FS\\Shipment\\FilterOrders' => __DIR__ . '/../..' . '/src/WPDesk/FS/Shipment/FilterOrders.php',
+        'WPDesk\\FS\\Shipment\\HposFilterOrders' => __DIR__ . '/../..' . '/src/WPDesk/FS/Shipment/HposFilterOrders.php',
         'WPDesk\\FS\\Shipment\\ModifyOrderTable' => __DIR__ . '/../..' . '/src/WPDesk/FS/Shipment/ModifyOrderTable.php',
         'WPDesk\\FS\\Shipment\\ModifyStatuses' => __DIR__ . '/../..' . '/src/WPDesk/FS/Shipment/ModifyStatuses.php',
         'WPDesk\\FS\\Shipment\\SubscriptionsIntegration' => __DIR__ . '/../..' . '/src/WPDesk/FS/Shipment/SubscriptionsIntegration.php',
@@ -594,6 +595,7 @@ class ComposerStaticInit5a4c49ffb5cc873111dbb5efc69086ae
         'WPDesk\\FS\\TableRate\\FreeShipping\\FreeShippingNoticeGenerator' => __DIR__ . '/../..' . '/src/WPDesk/FS/TableRate/FreeShipping/FreeShippingNoticeGenerator.php',
         'WPDesk\\FS\\TableRate\\FreeShipping\\FreeShippingNoticeRenderer' => __DIR__ . '/../..' . '/src/WPDesk/FS/TableRate/FreeShipping/FreeShippingNoticeRenderer.php',
         'WPDesk\\FS\\TableRate\\FreeShipping\\LffsNoticeTextFormatValidator' => __DIR__ . '/../..' . '/src/WPDesk/FS/TableRate/FreeShipping/LffsNoticeTextFormatValidator.php',
+        'WPDesk\\FS\\TableRate\\FreeShipping\\NoticeTextFormatter' => __DIR__ . '/../..' . '/src/WPDesk/FS/TableRate/FreeShipping/NoticeTextFormatter.php',
         'WPDesk\\FS\\TableRate\\FreeShipping\\NoticeTextSettings' => __DIR__ . '/../..' . '/src/WPDesk/FS/TableRate/FreeShipping/NoticeTextSettings.php',
         'WPDesk\\FS\\TableRate\\FreeShipping\\ProgressBarSettings' => __DIR__ . '/../..' . '/src/WPDesk/FS/TableRate/FreeShipping/ProgressBarSettings.php',
         'WPDesk\\FS\\TableRate\\FreeShipping\\Tracker' => __DIR__ . '/../..' . '/src/WPDesk/FS/TableRate/FreeShipping/Tracker.php',
@@ -729,9 +731,9 @@ class ComposerStaticInit5a4c49ffb5cc873111dbb5efc69086ae
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit5a4c49ffb5cc873111dbb5efc69086ae::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit5a4c49ffb5cc873111dbb5efc69086ae::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit5a4c49ffb5cc873111dbb5efc69086ae::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit2dde00f4d2f07c77b63199db3b20a865::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit2dde00f4d2f07c77b63199db3b20a865::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit2dde00f4d2f07c77b63199db3b20a865::$classMap;
 
         }, null, ClassLoader::class);
     }

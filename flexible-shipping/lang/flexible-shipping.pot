@@ -2,14 +2,14 @@
 # This file is distributed under the same license as the Flexible Shipping plugin.
 msgid ""
 msgstr ""
-"Project-Id-Version: Flexible Shipping 6.13.3\n"
+"Project-Id-Version: Flexible Shipping 6.13.4\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/flexible-shipping\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-10-13T10:49:25+00:00\n"
+"POT-Creation-Date: 2026-10-20T09:53:32+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: flexible-shipping\n"
@@ -24,9 +24,9 @@ msgstr ""
 #: classes/table-rate/settings/flexible-shipping.php:32
 #: classes/table-rate/shipping-method.php:97
 #: src/WPDesk/FS/TableRate/ShippingMethod/CommonMethodSettings.php:180
-#: src/WPDesk/FS/TableRate/ShippingMethod/Duplicate/DuplicateAction.php:83
-#: src/WPDesk/FS/TableRate/ShippingMethod/Duplicate/DuplicateScript.php:67
-#: src/WPDesk/FS/TableRate/ShippingMethodSingle.php:73
+#: src/WPDesk/FS/TableRate/ShippingMethod/Duplicate/DuplicateAction.php:81
+#: src/WPDesk/FS/TableRate/ShippingMethod/Duplicate/DuplicateScript.php:68
+#: src/WPDesk/FS/TableRate/ShippingMethodSingle.php:69
 #: vendor_prefixed/wpdesk/wp-wpdesk-fs-compatibility/src/PluginCompatibilityChecker.php:94
 msgid "Flexible Shipping"
 msgstr ""
@@ -51,7 +51,7 @@ msgstr ""
 msgid "https://octol.io/fs-author"
 msgstr ""
 
-#: classes/class-flexible-shipping-plugin.php:597
+#: classes/class-flexible-shipping-plugin.php:598
 #: src/WPDesk/FS/Upselling/FlexibleShippingProOffer.php:17
 #: vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/Plugin/PluginFactory.php:25
 #: vendor_prefixed/wpdesk/wp-wpdesk-fs-compatibility/src/PluginCompatibilityChecker.php:97
@@ -59,17 +59,17 @@ msgid "Flexible Shipping PRO"
 msgstr ""
 
 #. Translators: link.
-#: classes/class-flexible-shipping-plugin.php:875
+#: classes/class-flexible-shipping-plugin.php:876
 #, php-format
 msgid "How can We make Flexible Shipping better for you? %1$sJust write to us.%2$s"
 msgstr ""
 
-#: classes/class-flexible-shipping-plugin.php:958
+#: classes/class-flexible-shipping-plugin.php:959
 #: vendor_prefixed/wpdesk/wp-builder/src/Plugin/AbstractPlugin.php:188
 msgid "Settings"
 msgstr ""
 
-#: classes/class-flexible-shipping-plugin.php:966
+#: classes/class-flexible-shipping-plugin.php:967
 msgid "Buy Flexible Shipping PRO"
 msgstr ""
 
@@ -247,7 +247,7 @@ msgid "Shipping method %s updated."
 msgstr ""
 
 #: classes/table-rate/shipping-method.php:568
-#: src/WPDesk/FS/TableRate/ShippingMethodSingle.php:455
+#: src/WPDesk/FS/TableRate/ShippingMethodSingle.php:447
 msgid "Shipping cost added."
 msgstr ""
 
@@ -290,7 +290,7 @@ msgid "Default"
 msgstr ""
 
 #: classes/table-rate/views/html-shipping-method-settings.php:17
-#: src/WPDesk/FS/Shipment/views/html-orders-filter-form.php:13
+#: src/WPDesk/FS/Shipment/views/html-orders-filter-form.php:14
 #: src/WPDesk/FS/TableRate/ShippingMethod/CommonMethodSettings.php:209
 #: vendor_prefixed/wpdesk/wp-wpdesk-fs-shipment/src/WPDesk/FS/Shipment/Manifest/CustomPostType.php:101
 #: vendor_prefixed/wpdesk/wp-wpdesk-fs-shipment/src/WPDesk/FS/Shipment/Manifest/views/filter-form.php:14
@@ -307,9 +307,9 @@ msgstr ""
 #: classes/table-rate/views/html-shipping-method-settings.php:55
 #: classes/table-rate/views/html-shipping-method-settings.php:63
 #: classes/table-rate/views/html-shipping-method-settings.php:72
-#: src/WPDesk/FS/TableRate/ShippingMethod/RateCalculator.php:264
-#: src/WPDesk/FS/TableRate/ShippingMethod/RateCalculator.php:270
-#: src/WPDesk/FS/TableRate/ShippingMethod/RateCalculator.php:281
+#: src/WPDesk/FS/TableRate/ShippingMethod/RateCalculator.php:272
+#: src/WPDesk/FS/TableRate/ShippingMethod/RateCalculator.php:278
+#: src/WPDesk/FS/TableRate/ShippingMethod/RateCalculator.php:289
 #: vendor_prefixed/octolize/flexible-shipping-rules/src/TableRate/Rule/Condition/AbstractCondition.php:160
 #: vendor_prefixed/octolize/flexible-shipping-rules/src/TableRate/Rule/Condition/AbstractCondition.php:331
 #: vendor_prefixed/octolize/flexible-shipping-rules/src/TableRate/Rule/Condition/None.php:62
@@ -681,7 +681,7 @@ msgid "Email:"
 msgstr ""
 
 #. Translators: link
-#: src/WPDesk/FS/Newsletter/views/newsletter-form.php:36
+#: src/WPDesk/FS/Newsletter/views/newsletter-form.php:37
 #, php-format
 msgid "I’d like to receive exclusive tips, updates, and special offers from Octolize by email. I can unsubscribe at any time. %1$sPrivacy Policy%2$s"
 msgstr ""
@@ -827,26 +827,26 @@ msgstr ""
 msgid "You are not allowed to perform this action. Please reload the page."
 msgstr ""
 
-#: src/WPDesk/FS/RatingPetition/Ajax.php:26
+#: src/WPDesk/FS/RatingPetition/Ajax.php:25
 msgid "This rating request is no longer active. Please reload the page."
 msgstr ""
 
-#: src/WPDesk/FS/RatingPetition/Ajax.php:39
+#: src/WPDesk/FS/RatingPetition/Ajax.php:37
 msgid "Invalid rating or postponement value."
 msgstr ""
 
-#: src/WPDesk/FS/RatingPetition/Ajax.php:54
+#: src/WPDesk/FS/RatingPetition/Ajax.php:51
 msgid "Please enter at least 10 characters of feedback."
 msgstr ""
 
 #. translators: %s: plugin slug.
-#: src/WPDesk/FS/RatingPetition/Ajax.php:61
+#: src/WPDesk/FS/RatingPetition/Ajax.php:57
 #: vendor_prefixed/wpdesk/wp-wpdesk-rating-petition/src/PopupPetition/PopupPetitionAjax.php:70
 #, php-format
 msgid "Feedback for %s"
 msgstr ""
 
-#: src/WPDesk/FS/RatingPetition/Ajax.php:63
+#: src/WPDesk/FS/RatingPetition/Ajax.php:59
 #: vendor_prefixed/wpdesk/wp-wpdesk-rating-petition/src/PopupPetition/PopupPetitionAjax.php:85
 msgid "Could not send email. Please try again later."
 msgstr ""
@@ -994,11 +994,11 @@ msgstr ""
 msgid "Create shipping manifest"
 msgstr ""
 
-#: src/WPDesk/FS/Shipment/BulkAction/HandleActionLabels.php:55
+#: src/WPDesk/FS/Shipment/BulkAction/HandleActionLabels.php:56
 msgid "Unable to create temporary zip archive for labels. Check temporary folder configuration on server."
 msgstr ""
 
-#: src/WPDesk/FS/Shipment/BulkAction/HandleActionLabels.php:57
+#: src/WPDesk/FS/Shipment/BulkAction/HandleActionLabels.php:58
 msgid "Unable to create temporary file for labels. Check temporary folder configuration on server."
 msgstr ""
 
@@ -1017,11 +1017,11 @@ msgstr ""
 msgid "No manifests created."
 msgstr ""
 
-#: src/WPDesk/FS/Shipment/BulkAction/HandleActionSend.php:49
+#: src/WPDesk/FS/Shipment/BulkAction/HandleActionSend.php:53
 msgid "Shipment created."
 msgstr ""
 
-#: src/WPDesk/FS/Shipment/BulkAction/HandleActionSend.php:62
+#: src/WPDesk/FS/Shipment/BulkAction/HandleActionSend.php:66
 msgid "No action performed."
 msgstr ""
 
@@ -1094,12 +1094,12 @@ msgstr ""
 msgid "Track shipment for: "
 msgstr ""
 
-#: src/WPDesk/FS/Shipment/views/html-orders-filter-form.php:12
-#: src/WPDesk/FS/Shipment/views/html-orders-filter-form.php:22
+#: src/WPDesk/FS/Shipment/views/html-orders-filter-form.php:13
+#: src/WPDesk/FS/Shipment/views/html-orders-filter-form.php:23
 msgid "All shippings"
 msgstr ""
 
-#: src/WPDesk/FS/Shipment/views/html-orders-filter-form.php:23
+#: src/WPDesk/FS/Shipment/views/html-orders-filter-form.php:24
 msgid "Shipment status"
 msgstr ""
 
@@ -1194,13 +1194,13 @@ msgid "%1$sUpgrade Now%2$s"
 msgstr ""
 
 #. Translators: zones.
-#: src/WPDesk/FS/TableRate/Debug/MultipleShippingZonesMatchedSameTerritoryNotice.php:59
+#: src/WPDesk/FS/TableRate/Debug/MultipleShippingZonesMatchedSameTerritoryNotice.php:64
 #, php-format
 msgid "%1$sFlexible Shipping hints%2$sA potential shipping zone configuration conflict has been detected: %3$s In order to fix it, change the shipping zones order starting from the narrowest at the very top of the list to the widest at the bottom and refresh the page."
 msgstr ""
 
 #. Translators: zone messages.
-#: src/WPDesk/FS/TableRate/Debug/MultipleShippingZonesMatchedSameTerritoryNotice.php:117
+#: src/WPDesk/FS/TableRate/Debug/MultipleShippingZonesMatchedSameTerritoryNotice.php:122
 #, php-format
 msgid "%1$sWider %2$s shipping zone covers the range of the narrower one placed below: %3$s.%4$s"
 msgstr ""
@@ -1211,15 +1211,16 @@ msgstr ""
 msgid "No shipping method handled by Flexible Shipping found in the %1$s shipping zone. %2$sAdd shipping method →%3$s"
 msgstr ""
 
+#. Translators: %1$s: amount left for free shipping.
 #. Translators: amount with currency.
 #: src/WPDesk/FS/TableRate/FreeShipping/FreeShippingNoticeGenerator.php:174
-#: src/WPDesk/FS/TableRate/FreeShipping/FreeShippingNoticeGenerator.php:194
+#: src/WPDesk/FS/TableRate/FreeShipping/FreeShippingNoticeGenerator.php:195
 #: src/WPDesk/FS/TableRate/FreeShipping/NoticeTextSettings.php:44
 #, php-format
 msgid "You only need %1$s more to get free shipping!"
 msgstr ""
 
-#: src/WPDesk/FS/TableRate/FreeShipping/FreeShippingNoticeGenerator.php:212
+#: src/WPDesk/FS/TableRate/FreeShipping/FreeShippingNoticeGenerator.php:213
 msgid "Continue shopping"
 msgstr ""
 
@@ -1325,60 +1326,47 @@ msgstr ""
 msgid "Description"
 msgstr ""
 
-#: src/WPDesk/FS/TableRate/Rule/Condition/Price.php:32
-#: src/WPDesk/FS/TableRate/Rule/Condition/Price.php:121
+#: src/WPDesk/FS/TableRate/Rule/Condition/Price.php:31
 #: src/WPDesk/FS/TableRate/Rule/PreconfiguredScenarios/PreconfiguredScenariosFactory.php:55
 #: vendor_prefixed/wpdesk/wp-wpdesk-fs-table-rate/src/BasedOnOptions.php:20
 msgid "Price"
 msgstr ""
 
-#: src/WPDesk/FS/TableRate/Rule/Condition/Price.php:33
-#: src/WPDesk/FS/TableRate/Rule/Condition/Price.php:122
+#: src/WPDesk/FS/TableRate/Rule/Condition/Price.php:32
 msgid "Shipping cost based on the cart total or package value"
 msgstr ""
 
-#: src/WPDesk/FS/TableRate/Rule/Condition/Price.php:34
-#: src/WPDesk/FS/TableRate/Rule/Condition/Price.php:123
+#: src/WPDesk/FS/TableRate/Rule/Condition/Price.php:33
 #: src/WPDesk/FS/TableRate/Rule/Condition/Pro/CartLineItem.php:27
 #: src/WPDesk/FS/TableRate/Rule/Condition/Pro/Item.php:25
 msgid "Cart"
 msgstr ""
 
-#: src/WPDesk/FS/TableRate/Rule/Condition/Price.php:91
-#: src/WPDesk/FS/TableRate/Rule/Condition/Price.php:180
+#: src/WPDesk/FS/TableRate/Rule/Condition/Price.php:90
 msgid "price is from"
 msgstr ""
 
-#: src/WPDesk/FS/TableRate/Rule/Condition/Price.php:92
-#: src/WPDesk/FS/TableRate/Rule/Condition/Price.php:181
+#: src/WPDesk/FS/TableRate/Rule/Condition/Price.php:91
 msgid "min"
 msgstr ""
 
-#: src/WPDesk/FS/TableRate/Rule/Condition/Price.php:93
-#: src/WPDesk/FS/TableRate/Rule/Condition/Price.php:182
+#: src/WPDesk/FS/TableRate/Rule/Condition/Price.php:92
+#: src/WPDesk/FS/TableRate/Rule/Condition/Weight.php:78
 #: src/WPDesk/FS/TableRate/Rule/Condition/Weight.php:79
-#: src/WPDesk/FS/TableRate/Rule/Condition/Weight.php:80
-#: src/WPDesk/FS/TableRate/Rule/Condition/Weight.php:155
-#: src/WPDesk/FS/TableRate/Rule/Condition/Weight.php:156
 msgid "is from"
 msgstr ""
 
-#: src/WPDesk/FS/TableRate/Rule/Condition/Price.php:99
-#: src/WPDesk/FS/TableRate/Rule/Condition/Price.php:188
+#: src/WPDesk/FS/TableRate/Rule/Condition/Price.php:98
 msgid "price to"
 msgstr ""
 
-#: src/WPDesk/FS/TableRate/Rule/Condition/Price.php:100
-#: src/WPDesk/FS/TableRate/Rule/Condition/Price.php:189
+#: src/WPDesk/FS/TableRate/Rule/Condition/Price.php:99
 msgid "max"
 msgstr ""
 
-#: src/WPDesk/FS/TableRate/Rule/Condition/Price.php:101
-#: src/WPDesk/FS/TableRate/Rule/Condition/Price.php:190
+#: src/WPDesk/FS/TableRate/Rule/Condition/Price.php:100
+#: src/WPDesk/FS/TableRate/Rule/Condition/Weight.php:86
 #: src/WPDesk/FS/TableRate/Rule/Condition/Weight.php:87
-#: src/WPDesk/FS/TableRate/Rule/Condition/Weight.php:88
-#: src/WPDesk/FS/TableRate/Rule/Condition/Weight.php:163
-#: src/WPDesk/FS/TableRate/Rule/Condition/Weight.php:164
 msgid "to"
 msgstr ""
 
@@ -1396,9 +1384,9 @@ msgstr ""
 #: src/WPDesk/FS/TableRate/Rule/Condition/Pro/ProductDimensionHeight.php:27
 #: src/WPDesk/FS/TableRate/Rule/Condition/Pro/ProductDimensionLength.php:27
 #: src/WPDesk/FS/TableRate/Rule/Condition/Pro/ProductDimensionWidth.php:27
-#: src/WPDesk/FS/TableRate/Rule/Condition/Pro/ProductFieldRange.php:21
+#: src/WPDesk/FS/TableRate/Rule/Condition/Pro/ProductFieldRange.php:20
 #: src/WPDesk/FS/TableRate/Rule/Condition/Pro/ProductFieldValue.php:19
-#: src/WPDesk/FS/TableRate/Rule/Condition/Pro/ProductStockQuantity.php:22
+#: src/WPDesk/FS/TableRate/Rule/Condition/Pro/ProductStockQuantity.php:20
 #: src/WPDesk/FS/TableRate/Rule/Condition/Pro/ProductStockStatus.php:19
 #: src/WPDesk/FS/TableRate/Rule/Condition/Pro/ProductTag.php:31
 #: src/WPDesk/FS/TableRate/Rule/Condition/Pro/ShippingClass.php:29
@@ -1431,16 +1419,15 @@ msgstr ""
 #: src/WPDesk/FS/TableRate/Rule/Condition/Pro/ProductDimensionHeight.php:23
 #: src/WPDesk/FS/TableRate/Rule/Condition/Pro/ProductDimensionLength.php:23
 #: src/WPDesk/FS/TableRate/Rule/Condition/Pro/ProductDimensionWidth.php:23
-#: src/WPDesk/FS/TableRate/Rule/Condition/Pro/ProductFieldRange.php:17
+#: src/WPDesk/FS/TableRate/Rule/Condition/Pro/ProductFieldRange.php:16
 #: src/WPDesk/FS/TableRate/Rule/Condition/Pro/ProductFieldValue.php:15
-#: src/WPDesk/FS/TableRate/Rule/Condition/Pro/ProductStockQuantity.php:18
+#: src/WPDesk/FS/TableRate/Rule/Condition/Pro/ProductStockQuantity.php:16
 #: src/WPDesk/FS/TableRate/Rule/Condition/Pro/ProductStockStatus.php:15
 #: src/WPDesk/FS/TableRate/Rule/Condition/Pro/ProductTag.php:27
 #: src/WPDesk/FS/TableRate/Rule/Condition/Pro/ShippingClass.php:25
 #: src/WPDesk/FS/TableRate/Rule/Condition/Pro/TotalOverallDimensions.php:27
 #: src/WPDesk/FS/TableRate/Rule/Condition/Pro/Volume.php:25
-#: src/WPDesk/FS/TableRate/Rule/Condition/Weight.php:34
-#: src/WPDesk/FS/TableRate/Rule/Condition/Weight.php:110
+#: src/WPDesk/FS/TableRate/Rule/Condition/Weight.php:33
 msgid "Product"
 msgstr ""
 
@@ -1484,11 +1471,11 @@ msgstr ""
 msgid "Shipping cost based on the product's width"
 msgstr ""
 
-#: src/WPDesk/FS/TableRate/Rule/Condition/Pro/ProductFieldRange.php:15
+#: src/WPDesk/FS/TableRate/Rule/Condition/Pro/ProductFieldRange.php:14
 msgid "Field range"
 msgstr ""
 
-#: src/WPDesk/FS/TableRate/Rule/Condition/Pro/ProductFieldRange.php:16
+#: src/WPDesk/FS/TableRate/Rule/Condition/Pro/ProductFieldRange.php:15
 msgid "Shipping cost based on the product's field range"
 msgstr ""
 
@@ -1500,11 +1487,11 @@ msgstr ""
 msgid "Shipping cost based on the product's field value"
 msgstr ""
 
-#: src/WPDesk/FS/TableRate/Rule/Condition/Pro/ProductStockQuantity.php:16
+#: src/WPDesk/FS/TableRate/Rule/Condition/Pro/ProductStockQuantity.php:14
 msgid "Stock quantity"
 msgstr ""
 
-#: src/WPDesk/FS/TableRate/Rule/Condition/Pro/ProductStockQuantity.php:17
+#: src/WPDesk/FS/TableRate/Rule/Condition/Pro/ProductStockQuantity.php:15
 msgid "Shipping cost based on the product's stock quantity"
 msgstr ""
 
@@ -1552,44 +1539,40 @@ msgstr ""
 msgid "Volume"
 msgstr ""
 
-#: src/WPDesk/FS/TableRate/Rule/Condition/Weight.php:32
-#: src/WPDesk/FS/TableRate/Rule/Condition/Weight.php:108
+#: src/WPDesk/FS/TableRate/Rule/Condition/Weight.php:31
 #: src/WPDesk/FS/TableRate/Rule/PreconfiguredScenarios/PreconfiguredScenariosFactory.php:36
 #: vendor_prefixed/wpdesk/wp-wpdesk-fs-table-rate/src/BasedOnOptions.php:20
 msgid "Weight"
 msgstr ""
 
-#: src/WPDesk/FS/TableRate/Rule/Condition/Weight.php:33
-#: src/WPDesk/FS/TableRate/Rule/Condition/Weight.php:109
+#: src/WPDesk/FS/TableRate/Rule/Condition/Weight.php:32
 msgid "Shipping cost based on the weight of the cart or package"
 msgstr ""
 
-#: src/WPDesk/FS/TableRate/Rule/Condition/Weight.php:78
-#: src/WPDesk/FS/TableRate/Rule/Condition/Weight.php:154
+#: src/WPDesk/FS/TableRate/Rule/Condition/Weight.php:77
 msgid "weight is from"
 msgstr ""
 
-#: src/WPDesk/FS/TableRate/Rule/Condition/Weight.php:86
-#: src/WPDesk/FS/TableRate/Rule/Condition/Weight.php:162
+#: src/WPDesk/FS/TableRate/Rule/Condition/Weight.php:85
 msgid "weight to"
 msgstr ""
 
-#: src/WPDesk/FS/TableRate/Rule/Cost/RuleAdditionalCostFieldsFactory.php:69
-#: src/WPDesk/FS/TableRate/Rule/Cost/RuleAdditionalCostFieldsFactory.php:70
+#: src/WPDesk/FS/TableRate/Rule/Cost/RuleAdditionalCostFieldsFactory.php:67
+#: src/WPDesk/FS/TableRate/Rule/Cost/RuleAdditionalCostFieldsFactory.php:68
 msgid "additional cost"
 msgstr ""
 
-#: src/WPDesk/FS/TableRate/Rule/Cost/RuleAdditionalCostFieldsFactory.php:71
+#: src/WPDesk/FS/TableRate/Rule/Cost/RuleAdditionalCostFieldsFactory.php:69
 msgid "additional cost is"
 msgstr ""
 
-#: src/WPDesk/FS/TableRate/Rule/Cost/RuleAdditionalCostFieldsFactory.php:78
-#: src/WPDesk/FS/TableRate/Rule/Cost/RuleAdditionalCostFieldsFactory.php:87
+#: src/WPDesk/FS/TableRate/Rule/Cost/RuleAdditionalCostFieldsFactory.php:76
+#: src/WPDesk/FS/TableRate/Rule/Cost/RuleAdditionalCostFieldsFactory.php:85
 msgid "additional cost per"
 msgstr ""
 
-#: src/WPDesk/FS/TableRate/Rule/Cost/RuleAdditionalCostFieldsFactory.php:79
-#: src/WPDesk/FS/TableRate/Rule/Cost/RuleAdditionalCostFieldsFactory.php:80
+#: src/WPDesk/FS/TableRate/Rule/Cost/RuleAdditionalCostFieldsFactory.php:77
+#: src/WPDesk/FS/TableRate/Rule/Cost/RuleAdditionalCostFieldsFactory.php:78
 msgid "per"
 msgstr ""
 
@@ -1656,7 +1639,7 @@ msgid "30-day money-back guarantee · Cancel anytime"
 msgstr ""
 
 #: src/WPDesk/FS/TableRate/ShippingMethod/CommonMethodSettings.php:41
-#: src/WPDesk/FS/TableRate/ShippingMethod/RateCalculator.php:385
+#: src/WPDesk/FS/TableRate/ShippingMethod/RateCalculator.php:413
 msgid "Free"
 msgstr ""
 
@@ -1831,7 +1814,7 @@ msgstr ""
 msgid "Shipping method duplication error. Please try again later."
 msgstr ""
 
-#: src/WPDesk/FS/TableRate/ShippingMethod/Duplicate/DuplicateAction.php:86
+#: src/WPDesk/FS/TableRate/ShippingMethod/Duplicate/DuplicateAction.php:84
 msgid "(Copy)"
 msgstr ""
 
@@ -1845,7 +1828,7 @@ msgstr ""
 msgid "%1$s%2$s%3$s shipping method duplication error. Please try again later."
 msgstr ""
 
-#: src/WPDesk/FS/TableRate/ShippingMethod/Duplicate/DuplicateScript.php:68
+#: src/WPDesk/FS/TableRate/ShippingMethod/Duplicate/DuplicateScript.php:69
 #: assets-src/rules-settings/js/components/rules-settings.js:525
 #: assets/js/rules-settings.js:137
 msgid "Duplicate"
@@ -1865,40 +1848,40 @@ msgstr ""
 msgid "Remove logo"
 msgstr ""
 
-#: src/WPDesk/FS/TableRate/ShippingMethod/RateCalculator.php:187
+#: src/WPDesk/FS/TableRate/ShippingMethod/RateCalculator.php:191
 msgid "Method available only for logged in users, but user is not logged in."
 msgstr ""
 
 #. Translators: shop currency.
-#: src/WPDesk/FS/TableRate/ShippingMethod/RateCalculator.php:194
+#: src/WPDesk/FS/TableRate/ShippingMethod/RateCalculator.php:198
 #, php-format
 msgid "Shop currency: %1$s"
 msgstr ""
 
 #. Translators: cart currency.
-#: src/WPDesk/FS/TableRate/ShippingMethod/RateCalculator.php:196
+#: src/WPDesk/FS/TableRate/ShippingMethod/RateCalculator.php:200
 #, php-format
 msgid "Cart currency: %1$s"
 msgstr ""
 
-#: src/WPDesk/FS/TableRate/ShippingMethod/RateCalculator.php:217
+#: src/WPDesk/FS/TableRate/ShippingMethod/RateCalculator.php:225
 msgid "Empty contents"
 msgstr ""
 
 #. Translators: contents value.
-#: src/WPDesk/FS/TableRate/ShippingMethod/RateCalculator.php:225
+#: src/WPDesk/FS/TableRate/ShippingMethod/RateCalculator.php:233
 #, php-format
 msgid "Contents value: %1$s %2$s"
 msgstr ""
 
 #. Translators: contents weight.
-#: src/WPDesk/FS/TableRate/ShippingMethod/RateCalculator.php:227
+#: src/WPDesk/FS/TableRate/ShippingMethod/RateCalculator.php:235
 #, php-format
 msgid "Contents weight: %1$s"
 msgstr ""
 
 #. Translators: add method.
-#: src/WPDesk/FS/TableRate/ShippingMethod/RateCalculator.php:264
+#: src/WPDesk/FS/TableRate/ShippingMethod/RateCalculator.php:272
 #, php-format
 msgid "Used and displayed in the cart/checkout: %1$s"
 msgstr ""
@@ -1906,9 +1889,9 @@ msgstr ""
 #. Translators: add method.
 #. Translators: free shipping.
 #. Translators: matched condition.
-#: src/WPDesk/FS/TableRate/ShippingMethod/RateCalculator.php:264
-#: src/WPDesk/FS/TableRate/ShippingMethod/RateCalculator.php:270
-#: src/WPDesk/FS/TableRate/ShippingMethod/RateCalculator.php:281
+#: src/WPDesk/FS/TableRate/ShippingMethod/RateCalculator.php:272
+#: src/WPDesk/FS/TableRate/ShippingMethod/RateCalculator.php:278
+#: src/WPDesk/FS/TableRate/ShippingMethod/RateCalculator.php:289
 #: vendor_prefixed/octolize/flexible-shipping-rules/src/TableRate/Rule/Condition/AbstractCondition.php:160
 #: vendor_prefixed/octolize/flexible-shipping-rules/src/TableRate/Rule/Condition/AbstractCondition.php:331
 #: vendor_prefixed/octolize/flexible-shipping-rules/src/TableRate/Rule/Condition/None.php:62
@@ -1917,37 +1900,37 @@ msgid "no"
 msgstr ""
 
 #. Translators: add method.
-#: src/WPDesk/FS/TableRate/ShippingMethod/RateCalculator.php:270
+#: src/WPDesk/FS/TableRate/ShippingMethod/RateCalculator.php:278
 #, php-format
 msgid "Used and displayed in the cart/checkout after filters: %1$s"
 msgstr ""
 
 #. Translators: cost, currency.
-#: src/WPDesk/FS/TableRate/ShippingMethod/RateCalculator.php:277
+#: src/WPDesk/FS/TableRate/ShippingMethod/RateCalculator.php:285
 #, php-format
 msgid "Calculated shipping cost: %1$s %2$s"
 msgstr ""
 
 #. Translators: free shipping.
-#: src/WPDesk/FS/TableRate/ShippingMethod/RateCalculator.php:281
+#: src/WPDesk/FS/TableRate/ShippingMethod/RateCalculator.php:289
 #, php-format
 msgid "Free shipping: %1$s"
 msgstr ""
 
 #. Translators: shipping cost after free shipping.
-#: src/WPDesk/FS/TableRate/ShippingMethod/RateCalculator.php:286
+#: src/WPDesk/FS/TableRate/ShippingMethod/RateCalculator.php:294
 #, php-format
 msgid "Shipping cost after free shipping applied: %1$s"
 msgstr ""
 
 #. Translators: method id.
-#: src/WPDesk/FS/TableRate/ShippingMethod/RateCalculator.php:290
+#: src/WPDesk/FS/TableRate/ShippingMethod/RateCalculator.php:298
 #, php-format
 msgid "Shipping method ID: %1$s"
 msgstr ""
 
 #. Translators: method title.
-#: src/WPDesk/FS/TableRate/ShippingMethod/RateCalculator.php:294
+#: src/WPDesk/FS/TableRate/ShippingMethod/RateCalculator.php:302
 #, php-format
 msgid "Shipping method title: %1$s"
 msgstr ""
@@ -1978,30 +1961,30 @@ msgstr ""
 msgid "Choose whether the shipping cost defined in the rules table should be inclusive or exclusive of tax."
 msgstr ""
 
-#: src/WPDesk/FS/TableRate/ShippingMethodSingle.php:74
+#: src/WPDesk/FS/TableRate/ShippingMethodSingle.php:70
 msgid "A single Flexible Shipping method."
 msgstr ""
 
 #. Translators: docs link.
-#: src/WPDesk/FS/TableRate/ShippingMethodSingle.php:78
+#: src/WPDesk/FS/TableRate/ShippingMethodSingle.php:74
 #, php-format
 msgid "A single Flexible Shipping method. Learn %1$show to configure FS shipping method &rarr;%2$s"
 msgstr ""
 
 #. Translators: documentation link opening tag, closing tag, free shipping threshold amount, zero cost amount.
-#: src/WPDesk/FS/TableRate/ShippingMethodSingle.php:230
+#: src/WPDesk/FS/TableRate/ShippingMethodSingle.php:222
 #, php-format
 msgid "Upewnij się, że zakres od progu darmowej wysyłki wzwyż jest również pokryty odpowiednią regułą w tabeli poniżej, np. KIEDY: Cena jest od %3$s do [puste], koszt wynosi %4$s.<br />%1$sDowiedz się, jak skonfigurować próg darmowej wysyłki w regułach obliczania kosztów →%2$s"
 msgstr ""
 
 #. Translators: documentation link opening tag, closing tag, free shipping threshold amount, zero cost amount.
-#: src/WPDesk/FS/TableRate/ShippingMethodSingle.php:240
+#: src/WPDesk/FS/TableRate/ShippingMethodSingle.php:232
 #, php-format
 msgid "Make sure the range from the free shipping threshold upwards is also covered by the corresponding rule in the table below, e.g. WHEN: Price is from %3$s to [empty], rule cost is %4$s.<br />%1$sLearn how to configure the free shipping threshold in the cost calculation rules →%2$s"
 msgstr ""
 
 #. Translators: code tag opening, code tag closing.
-#: src/WPDesk/FS/TableRate/ShippingMethodSingle.php:396
+#: src/WPDesk/FS/TableRate/ShippingMethodSingle.php:388
 #, php-format
 msgid "The LFFS notice text contains an invalid placeholder format. Use %1$s%%1$s%2$s to display the amount left for free shipping."
 msgstr ""
@@ -2067,7 +2050,7 @@ msgid "This is where the rules table should be displayed. If it's not, it is usu
 msgstr ""
 
 #. Translators: open tag, close tag.
-#: src/WPDesk/FS/TableRate/views/shipping-method-settings-rules.php:98
+#: src/WPDesk/FS/TableRate/views/shipping-method-settings-rules.php:100
 #, php-format
 msgid "To use Flexible Shipping Rules Table you need to switch to non-modal mode. %1$sClick here%2$s to edit this shipping method with Rules Table."
 msgstr ""

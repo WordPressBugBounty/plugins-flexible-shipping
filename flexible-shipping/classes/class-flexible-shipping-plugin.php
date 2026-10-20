@@ -223,6 +223,7 @@ class Flexible_Shipping_Plugin extends AbstractPlugin implements HookableCollect
 		$this->add_hookable( new ShipmentFunctionality( $this->logger, trailingslashit( $this->get_plugin_assets_url() ) . '../vendor_prefixed/wpdesk/wp-wpdesk-fs-shipment/assets/', $this->scripts_version ) );
 
 		$this->add_hookable( new Shipment\FilterOrders() );
+		$this->add_hookable( new Shipment\HposFilterOrders() );
 		$this->add_hookable( new Shipment\ModifyStatuses() );
 		$this->add_hookable( new Shipment\DispatchLabelFile() );
 		$this->add_hookable( new Shipment\BulkAction( $session_factory ) );
